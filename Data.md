@@ -9,6 +9,7 @@
 - http://www.mpscworld.com/veg-vel-ani-antar
 - [Videos] http://www.thefreemath.org/2327233923672340-23602368232623752306.html
 - [Images] http://magical-shortcut.blogspot.com/2013/08/math-shortcut.html
+- [Images] http://www.resultuniraj.co.in/topic-wise-mathematics-notes-in-hindi/
 
 
 #### English
