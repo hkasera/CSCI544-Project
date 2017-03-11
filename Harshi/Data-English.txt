@@ -1,0 +1,127 @@
+1. There are 3 people riding on a train. At the previous stop, 53 people got off.
+How many people were riding the train before the stop?
+ट्रेन पर सवार 3 लोग हैं। पिछली स्टॉप पर, 53 लोग मिल गए
+स्टॉप से पहले कितने लोग गाड़ी चला रहे थे?
+
+2. If a lady buys 12 apples, 12 mangoes and 10 guavas, how many total pieces of fruit does she buy?
+एक महिला 12 सेब और 12 आमों खरीदती है। वह कितने फल खरीदती है?
+
+3. Harry obtains 95 marks in Math, 90 marks in English, and 92 marks in Science. How many total marks did he obtain in all subjects?
+हैरी ने गणित में 95 अंक, अंग्रेजी में 90 अंक और विज्ञान में 9 2 अंक प्राप्त किए। उन्होंने सभी विषयों में कितने कुल अंक प्राप्त किए?
+
+4. There are 550 passengers on a train. At the next stop, 289 passengers disembark. How many passengers are there on the train now?
+ट्रेन पर 550 यात्री हैं अगले स्टॉप पर, 28 9 यात्रियों को उतरना अब ट्रेन पर कितने यात्री हैं?
+
+5. One airplane can accommodate 330 passengers. How many airplanes are required to accommodate seats for 990 passengers?
+एक हवाई जहाज 330 यात्रियों को समायोजित कर सकता है 9 90 यात्रियों के लिए सीटें समायोजित करने के लिए कितने हवाई जहाज की आवश्यकता है?
+
+6. 522 birds are sitting on a tree. If 129 birds fly away, how many birds are left on the tree?
+522 पक्षी एक पेड़ पर बैठे हैं। यदि 12 9 पक्षी उड़ते हैं, तो पेड़ पर कितने पक्षियों को छोड़ दिया जाता है?
+
+7. A city has 3 zoos. One zoo has 213 animals, the second zoo has 68 animals and the third zoo has 177 animals. 
+How many animals do all the zoos have in total?
+एक शहर में 3 चिड़ियाघर हैं एक चिड़ियाघर में 213 जानवर हैं, दूसरा चिड़ियाघर में 68 जानवर हैं और तीसरे चिड़ियाघर में 177 जानवर हैं। 
+कितने जानवरों सभी चिड़ियाघरों कुल में है?
+
+8. There are 828 people on a ship. If 389 people disembark before the ship completes its course, 
+how many people reach the destination?
+जहाज पर 828 लोग हैं यदि 38 9 लोग जहाज़ से पहले अपने पाठ्यक्रम को पूरा करने से पहले उतरते हैं, तो कितने लोग गंतव्य तक पहुंचते हैं?
+
+9. Gabriela did 6 more jumping jacks than Emily around noon. Emily did 33 jumping jacks. How many jumping jacks did Gabriela do?
+
+10. There were 39 people riding on a train before it stopped and some number of people got off. Now there are 28 people riding on the train. How many people got off the train at the stop?
+
+11. There are 29 trees on the banks of the river. The right bank has 19 of them. How many trees are on the left bank of the river?
+
+12. Daniel did 94 push-ups in the evening. Luis did 93 push-ups at night. How many more push-ups did Daniel do than Luis?
+
+13. Luis did 13 more squats than Jessica in the evening. Jessica did 67 squats. How many squats did Luis do?
+
+14. 45 cars were in the toy store parking lot. 39 more cars park at the toy store. How many cars are in the parking lot now?
+
+15. Ishaan did 20 more sit-ups than Vanessa at night. Ishaan did 27 sit-ups. How many sit-ups did Vanessa do?
+
+16. Ishaan did 26 fewer jumping jacks than Omar in the morning. Omar did 29 jumping jacks. How many jumping jacks did Ishaan do?
+
+17. Michael did 1 fewer sit-up than Luis at night. Luis did 22 sit-ups. How many sit-ups did Michael do?
+
+18. There are 20 trees on the right bank of a river. There are 24 trees on the left bank. How many trees are on the banks of the river?
+
+19. Two bunnies sat on the grass. Three more bunnies hopped there. 
+How many bunnies are on the grass now?  
+2 + 3 = ?
+
+20. Two bunnies were sitting on the grass. Some more bunnies hopped there. Then there were five bunnies. How many bunnies hopped over to the first?
+2 + ? = 5
+
+21. Some bunnies were sitting on the grass. Three more bunnies hopped there. Then there were five bunnies. How many bunnies were on the grass before?
+? + 3 = 5
+
+22. Five apples were on the table. I ate two apples. 
+How many apples are on the table now? 
+5 – 2 = ?
+
+23. Five apples were on the table. I ate some apples. Then there were three apples. 
+How many apples did I eat? 
+5 – ? = 3
+
+24. Some apples were on the table. I ate two apples. Then there were three apples. 
+How many apples were on the table before? 
+? – 2 = 3
+
+25. Lily had 5 apples and her aunt gave her 9 apples later. How many apples did Lily have finally?
+
+26. There are 5 books on the desk. Betty took 2 away. How many books are left on the desk?
+
+27. There are 9 cars in the shop and 8 of them are sold. How many cars are left?
+
+28. Mary had 11 toys and she gave 5 of them to Emma. How many toys did Mary have finally?
+
+29. A furniture store sold 6 tables, 2 bookcases and 1 bed. How many pieces of furniture did the store sell in all?
+
+30. 1. Laurem gave Troy two yellow pencils, three blue pencils and one green pencil. How many pencils did Lauren give him in all?
+
+31. 2. Ms. Ellis gave Lauren and Troy some cookies. Lauren ate two sugar and two chocolate chip cookies. Troy ate three oatmeal raisin and two sugar cookies. How many cookies did they eat in all?
+
+32. I have 8 peanuts. Then I eat 5 of them. How many peanuts are left?
+
+33. Three red apples and two green apples are on the table. How many apples are on the table?
+3 + 2 = ?
+
+34. Five apples are on the table. Three are red and the rest are green. How many apples are green?
+3 + ? = 5, 5  3 = ?
+
+35. Jenny has five flowers. How many can she put in her red vase and how many in her blue vase?
+
+36. Jane has two oranges. Mary has five oranges. How many more oranges does Mary have than Jane? 
+
+37. Jane has two oranges. Mary has five oranges. How many fewer oranges does Jane have than Mary?
+
+38. Mary has three more oranges than Jane. Jane has two oranges. How many oranges does Mary have? 
+
+39. Jane has 3 fewer oranges than Mary. Jane has two oranges. How many oranges does Mary have?
+
+40. Mary has three more oranges than Jane. Mary has five oranges. How many oranges does Jane have?
+
+41. Jane has 3 fewer oranges than Mary. Mary has five oranges. How many oranges does Jane have?
+? + 3 = 5
+
+42. Mr. Oliver had 88 pencils. He sold 27 of them. How many pencils did he have left?
+
+43. There are 98 hats. 20 of them are pink and the rest are yellow. How many yellow hats are there?
+
+44. Mr. Gray sold 54 drinks in the morning. Mr. Frank sold 25 drinks at night. How many drinks did they sll altogether?
+
+45. Maya had some stamps. She gave 7 stamps to her younger brothers. Maya then had 14 stamps. How many stamps did Maya have at first?
+
+46. Adam has 11 fewer lollipops than Hope. If Adam has 16 lollipops, how may lollipops does Hope have?
+
+47. Cayla did 88 sit-ups in the morning. Nekira did 32 sit-ups at night. How many more sit-ups did Cayla do than Nekira?
+
+48. 50 children attended the birthday party. 13 children left during the first hour. 9 children came in during the second hour. How many children were at the birtday party then?
+
+49. Max has 15 marbles. He let Rosa have 6 of his marbles. How many marbles does Max have left?
+
+50. There are 8 trees on the right bank of a river. There are 4 trees on the left bank.
+How many trees are on the banks of the river?
+
