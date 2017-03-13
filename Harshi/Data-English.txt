@@ -7,15 +7,15 @@ How many people were riding the train before the stop?
 
 
 2. If a lady buys 12 apples and 12 mangoes, how many total pieces of fruit does she buy?
-एक महिला 12 सेब और 12 आमों खरीदती है। वह कितने फल खरीदती है?
+एक महिला 12 सेब और 12 आम खरीदती है। वह कुल कितने फल खरीदती है?
 जोड
 12 + 12 = x
 24
 
 3. Harry obtains 95 marks in Math, 90 marks in English, and 92 marks in Science. How many total marks did he obtain in all subjects?
-हैरी ने गणित में 95 अंक, अंग्रेजी में 90 अंक और विज्ञान में 9 2 अंक प्राप्त किए। उन्होंने सभी विषयों में कुल कितने अंक प्राप्त किए?
+हैरी ने गणित में 95 अंक, अंग्रेजी में 90 अंक और विज्ञान में 92 अंक प्राप्त किए। उन्होंने सभी विषयों में कुल कितने अंक प्राप्त किए?
 जोड
-95+90+92=x
+x = 95 + 90 + 92
 277
 
 4. There are 550 passengers on a train. At the next stop, 289 passengers disembark. How many passengers are there on the train now?
@@ -25,40 +25,70 @@ How many people were riding the train before the stop?
 261
 
 5. Ronald has 8 video games and his brother has 6 video games. How many games do they have in total?
+रोनाल्ड के पास 8 वीडियो गेम हैं और उनके भाई के पास 6 वीडियो गेम्स हैं। उनके पास कुल कितने गेम्स हैं?
+जोड
+x = 8 + 6
+14
 
 6. 522 birds are sitting on a tree. If 129 birds fly away, how many birds are left on the tree?
 522 पक्षी एक पेड़ पर बैठे हैं। अगर 129 पक्षी उड़ते हैं, तो कितने पक्षी अभी भी पेड़ पर बैठे हैं?
 घटाव
-522-129=x
+x = 522 - 129
 393
 
 7. A city has 3 zoos. One zoo has 213 animals, the second zoo has 68 animals and the third zoo has 177 animals. 
 How many animals do all the zoos have in total?
-एक शहर में 3 चिड़ियाघर हैं एक चिड़ियाघर में 213 जानवर हैं दूसरे चिड़ियाघर में 68 जानवर हैं और तीसरे चिड़ियाघर में 177 जानवर हैं।
+एक शहर में 3 चिड़ियाघर हैं। एक चिड़ियाघर में 213 जानवर हैं, दूसरे चिड़ियाघर में 68 जानवर हैं और तीसरे चिड़ियाघर में 177 जानवर हैं।
 सभी चिड़ियाघरों में, कुल कितने जानवर हैं?
 जोड
-213+68+177=x
+x = 213 + 68 + 177
 458
 
 8. There are 828 people on a ship. If 389 people disembark before the ship completes its course, 
 how many people reach the destination?
-जहाज पर 828 लोग हैं। अगर 389 लोग यात्रा से पहले ही निकल जाते हैं, कितने लोग गंतव्य तक पहुंचते हैं?
+एक जहाज पर 828 लोग हैं। अगर 389 लोग यात्रा से पहले ही निकल जाते हैं, कितने लोग गंतव्य तक पहुंचते हैं?
 घटाव
-828-389=x
+x = 828 - 389
 439
 
-9. Gabriela did 6 more jumping jacks than Emily around noon. Emily did 33 jumping jacks. How many jumping jacks did Gabriela do?
+9. Gabriela drew 6 more figures than Emily around noon. Emily drew 33 figures. How many figures did Gabriela drew?
+गैब्रिएला ने दोपहर के आसपास एमिली से 6 अधिक आंकड़े आकर्षित किए। एमिली ने 33 आंकड़े निकाले। गैब्रिएला ने कितने आंकड़े दिए?
+जोड
+x = y + 6
+y = 33
+39
 
-10. There were 39 people riding on a train before it stopped and some number of people got off. Now there are 28 people riding on the train. How many people got off the train at the stop?
+10. There are 39 people travelling by a train. The train stopped and some number of people got off the train. Now there are 28 people travelling by the train. How many people got off the train at the stop?
+एक ट्रेन से 39 लोग यात्रा कर रहे हैं। रेलगाड़ी बंद हो गई और कुछ लोग ट्रेन से बाहर हो गए। अब ट्रेन से 28 लोग यात्रा कर रहे हैं। कितने लोगों को स्टॉप पर ट्रेन से मिल गया?
+घटाव
+x = 39 - 28
+9
 
 11. There are 29 trees on the banks of the river. The right bank has 19 of them. How many trees are on the left bank of the river?
+नदी के तट पर 29 पेड़ हैं। दायां किनारे में उनमें से 19 हैं। नदी के बाएं किनारे पर कितने पेड़ हैं?
 घटाव
+x = 29 - 19
+10
 
 12. Daniel did 94 push-ups in the evening. Luis did 93 push-ups at night. How many more push-ups did Daniel do than Luis?
+डेनियल ने शाम को 94 पुश-अप कीया। लुइस ने रात में 93 पुश-अप कीया। लुइस की तुलना में डैनियल ने कितने अधिक पुश-अप बनाए?
+घटाव
+x = 94 - 93
+1
 
-13. Luis did 13 more squats than Jessica in the evening. Jessica did 67 squats. How many squats did Luis do?
+13. Luis did 13 more assignments than Jessica in the evening. Jessica did 67 assignments. How many assignments did Luis do?
+लुइस ने शाम को जेसिका की तुलना में अधिक 13 कार्य किए। जेसिका ने 67 कार्य किया। लुइस ने कितने काम किए?
+जोड
+x = y + 13
+y = 67
+80
 
-14. 45 cars were in the toy store parking lot. 39 more cars park at the toy store. How many cars are in the parking lot now?
+14. 45 cars were in the store parking lot. 39 more cars park at the store. How many cars are in the parking lot now?
+45 कारें स्टोर पार्किंग स्थल में थीं। स्टोर में 39 और कारो ने पार्क किया। पार्किंग में अब कितनी कारें हैं?
+जोड
+x = 45 + 39
+84
+
 
 15. Ishaan did 20 more sit-ups than Vanessa at night. Ishaan did 27 sit-ups. How many sit-ups did Vanessa do?
 
@@ -69,30 +99,45 @@ how many people reach the destination?
 घटाव
 
 18. There are 20 trees on the right bank of a river. There are 24 trees on the left bank. How many trees are on the banks of the river?
+नदी के दाहिने किनारे पर 20 पेड़ हैं। बाएं किनारे पर 24 पेड़ हैं। नदी के तट पर कितने वृक्ष हैं?
+जोड
+x = 20 + 24
+44
 
 
-19. Two bunnies sat on the grass. Three more bunnies hopped there. 
-How many bunnies are on the grass now?  
-2 + 3 = ?
+19. Two rabbits sat on the grass. Three more rabbits came there. How many rabbits are on the grass now?
+दो खरगोश घास पर बैठे थे। तीन और खरगोश वहां आए। अब घास पर कितने खरगोश हैं?
+जोड
+x = 2 + 3
+5
 
-20. Two bunnies were sitting on the grass. Some more bunnies hopped there. Then there were five bunnies. How many bunnies hopped over to the first?
-2 + ? = 5
-
-21. Some bunnies were sitting on the grass. Three more bunnies hopped there. Then there were five bunnies. How many bunnies were on the grass before?
-? + 3 = 5
-
-22. Five apples were on the table. I ate two apples. 
-How many apples are on the table now? 
+20. Two rabbits were sitting on the grass. Some more rabbits came there. Then there were five rabbits. How many rabbits came over to the first?
+घास पर दो खरगोश बैठे थे। कुछ और खरगोश वहां आए। अब वहां कुल पांच खरगोश थे। पहले कितने खरगोश आए थे?
 घटाव
-5 – 2 = ?
+x = 2 + y
+x = 5
+3
 
-23. Five apples were on the table. I ate some apples. Then there were three apples. 
-How many apples did I eat? 
+
+21. Some rabbits were sitting on the grass. Three more rabbits came there. Now there were five rabbits. How many rabbits were on the grass before?
+कुछ खरगोश घास पर बैठे थे। तीन और खरगोश वहां आए। अब पांच खरगोश थे। कितने खरगोश पहले घास पर थे?
 घटाव
-5 – ? = 3
+x + 3 = 5
+2
 
-24. Some apples were on the table. I ate two apples. Then there were three apples. 
-How many apples were on the table before? 
+22. Five apples were on the table. I ate two apples. How many apples are on the table now? 
+पांच सेब मेज पर थे। मैंने दो सेब खाए। मेज पर अब कितने सेब हैं?
+घटाव
+x = 5 – 2 
+3
+
+23. Five apples were on the table. I ate some apples. Now there were three apples. How many apples did I eat? 
+पांच सेब मेज पर थे। मैंने कुछ सेब खाए। अब तीन सेब थे। मैंने कितने सेब खाए?
+घटाव
+5 – x = 3
+2
+
+24. Some apples were on the table. I ate two apples. Then there were three apples. How many apples were on the table before? 
 घटाव
 ? – 2 = 3
 
