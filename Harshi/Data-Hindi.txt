@@ -114,19 +114,27 @@ x = 5 – 2
 5 – x = 3
 2
 
-24. Some apples were on the table. I ate two apples. Then there were three apples. How many apples were on the table before? 
+24. कुछ सेब मेज पर थे। मैंने दो सेब खाए। अब मेज पर तीन सेब हैं। कितने सेब पहले मेज पर थे?
 घटाव
 ? – 2 = 3
 
-25. Lily had 5 apples and her aunt gave her 9 apples later. How many apples did Lily have finally?
+25. लिली के पास 5 सेब थे। और उसकी चाची ने 9 सेब को बाद में दिया। लिली के पास कितने सेब हैं?
+जोड
+x = 5 + 9
+14
 
-26. There are 5 books on the desk. Betty took 2 away. How many books are left on the desk?
+26. टेबल पर 5 किताबें हैं। राधा ने 2 किताबें लीं। टेबल पर कितनी किताबें बची हैं?
 घटाव
 
-27. There are 9 cars in the shop and 8 of them are sold. How many cars are left?
+27. दुकान में 9 कारें हैं। और उनमें से 8 बिक रहीं हैं। कितनी कारें बची हैं?
 घटाव
+x = 9 - 8
+1
 
-28. Mary had 11 toys and she gave 5 of them to Emma. How many toys did Mary have finally?
+28. सीता के पास 11 खिलौने हैं। उसने गीता को 5 खिलौने दीये। सीता के पास अब कितने खिलौने थे?
+घटाव
+x = 11 - 5
+6
 
 29. A furniture store sold 6 tables, 2 bookcases and 1 bed. How many pieces of furniture did the store sell in all?
 
@@ -135,17 +143,25 @@ x = 5 – 2
 31. 2. Ms. Ellis gave Lauren and Troy some cookies. Lauren ate two sugar and two chocolate chip cookies. Troy ate three oatmeal raisin and two sugar cookies. How many cookies did they eat in all?
 
 
-32. I have 8 peanuts. Then I eat 5 of them. How many peanuts are left?
+32. मेरे पास 8 मूंगफली हैं। मैंने उनमें से 5 खाए। कितने मूंगफली बचे हैं?
 घटाव
+x =  8 - 5
+3
 
-33. Three red apples and two green apples are on the table. How many apples are on the table?
-3 + 2 = ?
+33. तीन लाल सेब और दो हरे सेब टेबल पर हैं। टेबल पर कितने सेब हैं?
+जोड
+x = 3 + 2
+5
 
-34. Five apples are on the table. Three are red and the rest are green. How many apples are green?
-3 + ? = 5, 5  3 = ?
-
-35. Jenny has five flowers. How many can she put in her red vase and how many in her blue vase?
+34. पांच सेब मेज पर हैं। तीन लाल हैं और बाकी हरे हैं। कितने सेब हरे हैं?
 घटाव
+x = 5 - 3
+2
+
+35. जेनी के पांच फूल हैं। उसने अपने लाल फूलदान में 2 फूल और नीले फूलदान में दूसरों को रखा। उसने अपने नीले फूलदान में कितने फूल डाल दिए?
+घटाव
+x = 5 - 2
+3
 
 36. Jane has two oranges. Mary has five oranges. How many more oranges does Mary have than Jane? 
 
