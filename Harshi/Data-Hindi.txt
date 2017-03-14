@@ -1,0 +1,184 @@
+1. 3 लोग एक ट्रेन पर सवारी कर रहे हैं। पिछली स्टॉप पर, 53 लोग ट्रेन से उतर गए। कितने लोग स्टॉप से पहले ट्रेन से यात्रा कर रहे थे?
+घटाव
+53 - x = 3
+50
+
+
+2. एक महिला 12 सेब और 12 आम खरीदती है। वह कुल कितने फल खरीदती है?
+जोड
+12 + 12 = x
+24
+
+3. हैरी ने गणित में 95 अंक, अंग्रेजी में 90 अंक और विज्ञान में 92 अंक प्राप्त किए। उन्होंने सभी विषयों में कुल कितने अंक प्राप्त किए?
+जोड
+x = 95 + 90 + 92
+277
+
+4. 550 यात्री एक ट्रेन से यात्रा कर रहे थे। 289 यात्रियों ने अगले स्टॉप पर ट्रेन छोड़ दी।अब ट्रेन पर कितने यात्री हैं?
+घटाव
+550-289=x
+261
+
+5. रोनाल्ड के पास 8 वीडियो गेम हैं और उनके भाई के पास 6 वीडियो गेम्स हैं। उनके पास कुल कितने गेम्स हैं?
+जोड
+x = 8 + 6
+14
+
+6. 522 पक्षी एक पेड़ पर बैठे हैं। अगर 129 पक्षी उड़ते हैं, तो कितने पक्षी अभी भी पेड़ पर बैठे हैं?
+घटाव
+x = 522 - 129
+393
+
+7. एक शहर में 3 चिड़ियाघर हैं। एक चिड़ियाघर में 213 जानवर हैं, दूसरे चिड़ियाघर में 68 जानवर हैं और तीसरे चिड़ियाघर में 177 जानवर हैं।
+सभी चिड़ियाघरों में, कुल कितने जानवर हैं?
+जोड
+x = 213 + 68 + 177
+458
+
+8. एक जहाज पर 828 लोग हैं। अगर 389 लोग यात्रा से पहले ही निकल जाते हैं, कितने लोग गंतव्य तक पहुंचते हैं?
+घटाव
+x = 828 - 389
+439
+
+9. गैब्रिएला ने दोपहर के आसपास एमिली से 6 अधिक आंकड़े आकर्षित किए। एमिली ने 33 आंकड़े निकाले। गैब्रिएला ने कितने आंकड़े दिए?
+जोड
+x = y + 6
+y = 33
+39
+
+10. एक ट्रेन से 39 लोग यात्रा कर रहे हैं। रेलगाड़ी बंद हो गई और कुछ लोग ट्रेन से बाहर हो गए। अब ट्रेन से 28 लोग यात्रा कर रहे हैं। कितने लोगों को स्टॉप पर ट्रेन से मिल गया?
+घटाव
+x = 39 - 28
+9
+
+11. नदी के तट पर 29 पेड़ हैं। दायां किनारे में उनमें से 19 हैं। नदी के बाएं किनारे पर कितने पेड़ हैं?
+घटाव
+x = 29 - 19
+10
+
+12. डेनियल ने शाम को 94 पुश-अप कीया। लुइस ने रात में 93 पुश-अप कीया। लुइस की तुलना में डैनियल ने कितने अधिक पुश-अप बनाए?
+घटाव
+x = 94 - 93
+1
+
+13. लुइस ने शाम को जेसिका की तुलना में अधिक 13 कार्य किए। जेसिका ने 67 कार्य किया। लुइस ने कितने काम किए?
+जोड
+x = y + 13
+y = 67
+80
+
+14. 45 कारें स्टोर पार्किंग स्थल में थीं। स्टोर में 39 और कारो ने पार्क किया। पार्किंग में अब कितनी कारें हैं?
+जोड
+x = 45 + 39
+84
+
+
+15. Ishaan did 20 more sit-ups than Vanessa at night. Ishaan did 27 sit-ups. How many sit-ups did Vanessa do?
+
+16. Ishaan did 26 fewer jumping jacks than Omar in the morning. Omar did 29 jumping jacks. How many jumping jacks did Ishaan do?
+घटाव
+
+17. Michael did 1 fewer sit-up than Luis at night. Luis did 22 sit-ups. How many sit-ups did Michael do?
+घटाव
+
+18. नदी के दाहिने किनारे पर 20 पेड़ हैं। बाएं किनारे पर 24 पेड़ हैं। नदी के तट पर कितने वृक्ष हैं?
+जोड
+x = 20 + 24
+44
+
+
+19. दो खरगोश घास पर बैठे थे। तीन और खरगोश वहां आए। अब घास पर कितने खरगोश हैं?
+जोड
+x = 2 + 3
+5
+
+20. घास पर दो खरगोश बैठे थे। कुछ और खरगोश वहां आए। अब वहां कुल पांच खरगोश थे। पहले कितने खरगोश आए थे?
+घटाव
+x = 2 + y
+x = 5
+3
+
+
+21. कुछ खरगोश घास पर बैठे थे। तीन और खरगोश वहां आए। अब पांच खरगोश थे। कितने खरगोश पहले घास पर थे?
+घटाव
+x + 3 = 5
+2
+
+22. पांच सेब मेज पर थे। मैंने दो सेब खाए। मेज पर अब कितने सेब हैं?
+घटाव
+x = 5 – 2 
+3
+
+23. पांच सेब मेज पर थे। मैंने कुछ सेब खाए। अब तीन सेब थे। मैंने कितने सेब खाए?
+घटाव
+5 – x = 3
+2
+
+24. Some apples were on the table. I ate two apples. Then there were three apples. How many apples were on the table before? 
+घटाव
+? – 2 = 3
+
+25. Lily had 5 apples and her aunt gave her 9 apples later. How many apples did Lily have finally?
+
+26. There are 5 books on the desk. Betty took 2 away. How many books are left on the desk?
+घटाव
+
+27. There are 9 cars in the shop and 8 of them are sold. How many cars are left?
+घटाव
+
+28. Mary had 11 toys and she gave 5 of them to Emma. How many toys did Mary have finally?
+
+29. A furniture store sold 6 tables, 2 bookcases and 1 bed. How many pieces of furniture did the store sell in all?
+
+30. 1. Laurem gave Troy two yellow pencils, three blue pencils and one green pencil. How many pencils did Lauren give him in all?
+
+31. 2. Ms. Ellis gave Lauren and Troy some cookies. Lauren ate two sugar and two chocolate chip cookies. Troy ate three oatmeal raisin and two sugar cookies. How many cookies did they eat in all?
+
+
+32. I have 8 peanuts. Then I eat 5 of them. How many peanuts are left?
+घटाव
+
+33. Three red apples and two green apples are on the table. How many apples are on the table?
+3 + 2 = ?
+
+34. Five apples are on the table. Three are red and the rest are green. How many apples are green?
+3 + ? = 5, 5  3 = ?
+
+35. Jenny has five flowers. How many can she put in her red vase and how many in her blue vase?
+घटाव
+
+36. Jane has two oranges. Mary has five oranges. How many more oranges does Mary have than Jane? 
+
+37. Jane has two oranges. Mary has five oranges. How many fewer oranges does Jane have than Mary?
+घटाव
+
+38. Mary has three more oranges than Jane. Jane has two oranges. How many oranges does Mary have? 
+
+39. Jane has 3 fewer oranges than Mary. Jane has two oranges. How many oranges does Mary have?
+घटाव
+
+40. Mary has three more oranges than Jane. Mary has five oranges. How many oranges does Jane have?
+
+41. Jane has 3 fewer oranges than Mary. Mary has five oranges. How many oranges does Jane have?
+? + 3 = 5
+
+42. Mr. Oliver had 88 pencils. He sold 27 of them. How many pencils did he have left?
+घटाव
+
+43. मेरे पास 98 टोपी हैं। उनमें से 20 गुलाबी हैं और बाकी पीले हैं। कितने पीले टोपी हैं?
+
+44. रवि ने सुबह 54 कॉफी बेची थी। श्याम ने रात में 25 कॉफी बेची थी। कितने कुल कॉफी वे दोनों बेच दिया?
+
+45. माया के पास कुछ डाक टिकट थे। उसने अपने छोटे भाइयों को 7 डाक टिकट दिए। यदि माया के पास 14 डाक टिकट थे, तो माया को कितने टिकटें पहले मिलीं?
+
+46. आशा की तुलना में एडम के पास 11 कम लॉलीपॉप हैं। यदि एडम के पास 16 लॉलीपॉप हैं, तो आशा के पास कितने लॉलीपॉप हैं?
+
+47. Cayla did 88 sit-ups in the morning. Nekira did 32 sit-ups at night. How many more sit-ups did Cayla do than Nekira?
+
+48. जन्मदिन की पार्टी में 50 बच्चों ने भाग लिया। पहले घंटे के दौरान 13 बच्चे पार्टी से बाहर निकल आए थे। दूसरे घंटे के दौरान 9 बच्चे आए। जन्मदिन की पार्टी में कितने बच्चे थे?
+
+49. Max has 15 marbles. He let Rosa have 6 of his marbles. How many marbles does Max have left?
+
+50. There are 8 trees on the right bank of a river. There are 4 trees on the left bank.
+How many trees are on the banks of the river?
+
