@@ -138,9 +138,12 @@ x = 11 - 5
 
 29. A furniture store sold 6 tables, 2 bookcases and 1 bed. How many pieces of furniture did the store sell in all?
 
-30. 1. Laurem gave Troy two yellow pencils, three blue pencils and one green pencil. How many pencils did Lauren give him in all?
+30. लीना ने मिना को दो पीले पेंसिल, तीन नीले पेंसिल और एक हरे रंग का पेंसिल दिया। लीने ने उसे कितने पेंसिल दिए?
+जोड
+x = 2 + 3 + 1
+5
 
-31. 2. Ms. Ellis gave Lauren and Troy some cookies. Lauren ate two sugar and two chocolate chip cookies. Troy ate three oatmeal raisin and two sugar cookies. How many cookies did they eat in all?
+31. Ms. Ellis gave Lauren and Troy some cookies. Lauren ate two sugar and two chocolate chip cookies. Troy ate three oatmeal raisin and two sugar cookies. How many cookies did they eat in all?
 
 
 32. मेरे पास 8 मूंगफली हैं। मैंने उनमें से 5 खाए। कितने मूंगफली बचे हैं?
@@ -163,7 +166,10 @@ x = 5 - 3
 x = 5 - 2
 3
 
-36. Jane has two oranges. Mary has five oranges. How many more oranges does Mary have than Jane? 
+36. जेन के पास दो संतरे हैं। मेरे पास पांच संतरे हैं। जेन की तुलना में मेरे पास कितने अधिक संतरे हैं?
+घटाव
+x = 5 - 2
+3
 
 37. Jane has two oranges. Mary has five oranges. How many fewer oranges does Jane have than Mary?
 घटाव
@@ -178,23 +184,51 @@ x = 5 - 2
 41. Jane has 3 fewer oranges than Mary. Mary has five oranges. How many oranges does Jane have?
 ? + 3 = 5
 
-42. Mr. Oliver had 88 pencils. He sold 27 of them. How many pencils did he have left?
+42. ओलिवर के पास 88 पेंसिल हैं। ओलिव ने 27 पेंसिल को बेच दिया। अब ओलिवर के पास कितने पेंसिल हैं?
 घटाव
+x = 88 - 27
+61
 
 43. मेरे पास 98 टोपी हैं। उनमें से 20 गुलाबी हैं और बाकी पीले हैं। कितने पीले टोपी हैं?
+घटाव
+x = 98 - 20
+78
 
 44. रवि ने सुबह 54 कॉफी बेची थी। श्याम ने रात में 25 कॉफी बेची थी। कितने कुल कॉफी वे दोनों बेच दिया?
+जोड
+x = 54
+y = 25
+कुल = x + y
+79
 
 45. माया के पास कुछ डाक टिकट थे। उसने अपने छोटे भाइयों को 7 डाक टिकट दिए। यदि माया के पास 14 डाक टिकट थे, तो माया को कितने टिकटें पहले मिलीं?
+जोड
+x = 14 + 7
+21
 
 46. आशा की तुलना में एडम के पास 11 कम लॉलीपॉप हैं। यदि एडम के पास 16 लॉलीपॉप हैं, तो आशा के पास कितने लॉलीपॉप हैं?
+घटाव
+x = y - 11
+y = 16
+5
 
 47. Cayla did 88 sit-ups in the morning. Nekira did 32 sit-ups at night. How many more sit-ups did Cayla do than Nekira?
 
 48. जन्मदिन की पार्टी में 50 बच्चों ने भाग लिया। पहले घंटे के दौरान 13 बच्चे पार्टी से बाहर निकल आए थे। दूसरे घंटे के दौरान 9 बच्चे आए। जन्मदिन की पार्टी में कितने बच्चे थे?
+जोड , घटाव
+x = 50
+x = x - 13
+x = x + 9
+45
 
-49. Max has 15 marbles. He let Rosa have 6 of his marbles. How many marbles does Max have left?
 
-50. There are 8 trees on the right bank of a river. There are 4 trees on the left bank.
-How many trees are on the banks of the river?
+49. मणी ने 15 चॉकलेट। खरीदे उसने राधा को उनमें से 6 दिए। मनी के पास अब कितने चॉकलेट हैं?
+घटाव
+x = 15 - 6
+9
+
+50. नदी के दाहिने किनारे पर 8 पेड़ हैं। बाएं किनारे पर 4 पेड़ हैं। नदी के तट पर कितने पेड़ हैं?
+जोड
+x = 8 + 4
+12
 
