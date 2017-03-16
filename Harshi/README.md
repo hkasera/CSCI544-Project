@@ -10,3 +10,4 @@ http://text-processing.com/demo/tag/
 
 ##### Tools
 http://sivareddy.in/downloads
+http://universaldependencies.org/hi/dep/nsubj.html
