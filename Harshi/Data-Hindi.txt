@@ -73,13 +73,23 @@ x = 45 + 39
 84
 
 
-15. Ishaan did 20 more sit-ups than Vanessa at night. Ishaan did 27 sit-ups. How many sit-ups did Vanessa do?
+15. मिनल ने रात में वाणी से 20 और गाने गाए। वणी ने 27 गाने गाए। कितने गाने मिनल ने गाए?
+जोड
+x = y + 20
+y = 27
+46
 
-16. Ishaan did 26 fewer jumping jacks than Omar in the morning. Omar did 29 jumping jacks. How many jumping jacks did Ishaan do?
+16. ईशा ने सुबह उमा से 26 कम काम किए थे। उमा ने 29 काम किए। ईशा ने कितने काम किए?
 घटाव
+x = y - 26
+y = 29
+3
 
-17. Michael did 1 fewer sit-up than Luis at night. Luis did 22 sit-ups. How many sit-ups did Michael do?
+17. मिहिर को परीक्षा में सूरज से 1 अंक कम मिले। सूरज को 92 अंक मिले। मिहिर को कितने अंक मिले?
 घटाव
+x = y - 1
+y = 92
+91
 
 18. नदी के दाहिने किनारे पर 20 पेड़ हैं। बाएं किनारे पर 24 पेड़ हैं। नदी के तट पर कितने वृक्ष हैं?
 जोड
@@ -110,13 +120,14 @@ x = 5 – 2
 3
 
 23. पांच सेब मेज पर थे। मैंने कुछ सेब खाए। अब तीन सेब थे। मैंने कितने सेब खाए?
-घटाव
+जोड
 5 – x = 3
 2
 
 24. कुछ सेब मेज पर थे। मैंने दो सेब खाए। अब मेज पर तीन सेब हैं। कितने सेब पहले मेज पर थे?
 घटाव
-? – 2 = 3
+x – 2 = 3
+5
 
 25. लिली के पास 5 सेब थे। और उसकी चाची ने 9 सेब को बाद में दिया। लिली के पास कितने सेब हैं?
 जोड
@@ -125,6 +136,8 @@ x = 5 + 9
 
 26. टेबल पर 5 किताबें हैं। राधा ने 2 किताबें लीं। टेबल पर कितनी किताबें बची हैं?
 घटाव
+x = 5 - 2
+3
 
 27. दुकान में 9 कारें हैं। और उनमें से 8 बिक रहीं हैं। कितनी कारें बची हैं?
 घटाव
@@ -136,14 +149,20 @@ x = 9 - 8
 x = 11 - 5
 6
 
-29. A furniture store sold 6 tables, 2 bookcases and 1 bed. How many pieces of furniture did the store sell in all?
+29. एक दुकान में 6 अलमारियों, 2 कुर्सियां और 1 बिस्तर बेच दिया। कितने फर्नीचर स्टोर ने बेच दिया?
+जोड
+x = 6 + 2 + 1
+9
 
 30. लीना ने मिना को दो पीले पेंसिल, तीन नीले पेंसिल और एक हरे रंग का पेंसिल दिया। लीने ने उसे कितने पेंसिल दिए?
 जोड
 x = 2 + 3 + 1
 5
 
-31. Ms. Ellis gave Lauren and Troy some cookies. Lauren ate two sugar and two chocolate chip cookies. Troy ate three oatmeal raisin and two sugar cookies. How many cookies did they eat in all?
+31. रीना ने लीला और टीना को कुछ किताबें दीं। लीला ने दो गणित और दो विज्ञान की पुस्तकें लीं। टीना ने तीन रसायन और दो भौतिकी की किताबें लीं। उन्होनें कुल कितनी किताबें लीं?
+जोड
+x = 2 + 2 + 3 + 2
+9
 
 
 32. मेरे पास 8 मूंगफली हैं। मैंने उनमें से 5 खाए। कितने मूंगफली बचे हैं?
@@ -171,18 +190,38 @@ x = 5 - 2
 x = 5 - 2
 3
 
-37. Jane has two oranges. Mary has five oranges. How many fewer oranges does Jane have than Mary?
+37. जानवी के पास दो नारंगी हैं। मारिया के पास पांच नारंगी हैं। जानवी के पास मारिया की तुलना में कितने कम संतरे हैं?
 घटाव
+x = 2
+y = 5
+y - x
+3
 
-38. Mary has three more oranges than Jane. Jane has two oranges. How many oranges does Mary have? 
+38. मारिया के पास जेन की तुलना में तीन और किताबें हैं। जेन के पास दो पुस्तकें हैं। मारिया के पास कितनी किताबें हैं?
+जोड
+x = y + 3
+y = 2
+5
 
-39. Jane has 3 fewer oranges than Mary. Jane has two oranges. How many oranges does Mary have?
+39. जेन के पास मैरी के मुकाबले 3 कम पेन हैं। जेन के पास दो कलम हैं। मैरी के पास कितनी कलम हैं?
+जोड
+x = y - 3
+x = 2
+5
+
+
+40. मैरी के पास जेन से अधिक तीन पदक है। मैरी के पास पांच पदक हैं। जेन के पास कितने पदक हैं?
 घटाव
+x = y + 3
+x = 5
+2
 
-40. Mary has three more oranges than Jane. Mary has five oranges. How many oranges does Jane have?
 
-41. Jane has 3 fewer oranges than Mary. Mary has five oranges. How many oranges does Jane have?
-? + 3 = 5
+41. जेन के पास मैरी से 3 कम कपड़े हैं। मैरी के पास पांच कपड़े हैं। जेन के पास कितने कपड़े हैं?
+जोड
+x = y - 3
+x = 5
+8
 
 42. ओलिवर के पास 88 पेंसिल हैं। ओलिव ने 27 पेंसिल को बेच दिया। अब ओलिवर के पास कितने पेंसिल हैं?
 घटाव
@@ -212,7 +251,12 @@ x = y - 11
 y = 16
 5
 
-47. Cayla did 88 sit-ups in the morning. Nekira did 32 sit-ups at night. How many more sit-ups did Cayla do than Nekira?
+47. सोनी ने सुबह 88 पत्र पढ़े। नैना ने रात में 32 पत्र पढ़े।। सोनी ने नैना से कितने अधिक पत्र पढ़े?
+घटाव
+x = 88
+y = 32
+x - y
+56
 
 48. जन्मदिन की पार्टी में 50 बच्चों ने भाग लिया। पहले घंटे के दौरान 13 बच्चे पार्टी से बाहर निकल आए थे। दूसरे घंटे के दौरान 9 बच्चे आए। जन्मदिन की पार्टी में कितने बच्चे थे?
 जोड , घटाव
