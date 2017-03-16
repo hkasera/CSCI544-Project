@@ -1,0 +1,7 @@
+3/-None- लोग/NN एक/QFNUM ट्रेन/NN पर/PREP सवारी/PREP कर/VFM रहे/VAUX हैं/VAUX ।/PUNC पिछली/PREP स्टॉप/NN पर/VFM ,/PUNC 53/-None- लोग/NN ट्रेन/NN से/PREP उतर/VFM गए/VAUX ।/PUNC कितने/PREP लोग/NN स्टॉप/NN से/PREP पहले/JJ ट्रेन/NN से/PREP यात्रा/NN कर/VFM रहे/VAUX थे/VAUX ?/PUNC
+
+एक/QFNUM महिला/NNC 12/-None- सेब/RB और/CC 12/-None- आम/JJ खरीदती/PREP है/VFM ।/PUNC वह/PRP कुल/QF कितने/PREP फल/NN खरीदती/PREP है/VFM ?/PUNC
+
+हैरी/PREP ने/PREP गणित/NN में/PREP 95/-None- अंक/QFNUM ,/PUNC अंग्रेजी/PREP में/PREP 90/-None- अंक/QFNUM और/CC विज्ञान/NNP में/PREP 92/-None- अंक/QFNUM प्राप्त/JVB किए/VFM ।/PUNC उन्होंने/PRP सभी/QF विषयों/PREP में/PREP कुल/QF कितने/PREP अंक/QFNUM प्राप्त/JVB किए/VFM ?/PUNC
+
+550/-None- यात्री/NNC एक/QFNUM ट्रेन/NN से/PREP यात्रा/NN कर/VFM रहे/VAUX थे/VAUX ।/PUNC 289/-None- यात्रियों/PREP ने/PREP अगले/JJ स्टॉप/NN पर/PREP ट्रेन/NN छोड़/-None- दी/VAUX ।अब/RB ट्रेन/NN पर/PREP कितने/PREP यात्री/NNC हैं/VAUX ?/PUNC
