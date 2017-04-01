@@ -24,3 +24,5 @@ http://ltrc.iiit.ac.in/treebank_H2014/
 
 http://www.maltparser.org/
 
+http://ltrc.iiit.ac.in/full_analyzer/hindi/run.cgi
+
