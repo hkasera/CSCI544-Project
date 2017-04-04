@@ -1,8 +1,19 @@
-# CSCI544-Project
-http://ron.artstein.org/csci544-2017/research-project.html
+# Maths Word Problem Solver in Hindi [ CSCI 544 Final Project]
+The ability to solve word problems is an integral part of our mathematical education because real-life problems almost never present themselves to us in mathematical form. The process of solving word problems involves understanding the components of the problem written in natural language in conjunction with mathematical reasoning.
 
-## Introduction
-In elementary school, we all are trained through the process of math problem solving by the use of various tactical strategies. The ability to solve word problems is an integral part of our mathematical education because real-life problems almost never present themselves to us in mathematical form. The process of solving word problems involves understanding the components of the problem written in natural language in conjunction with mathematical reasoning.
-In our project, we aim to construct a very basic Hindi word problem solver specifically for elementary school problems involving only one mathematical operation - that of addition or subtraction.
-Solving word problems is an interesting problem because of the miscomprehension and the inability to formulate a mathematical representation of the text automatically as it involves additional mathematical reasoning apart from comprehending natural language. Also, stop word removal and stemming, two common pre- processing steps in text classification by topic, have been observed to negatively impact classification of problem types. Choosing Hindi as the language makes it more challenging because it is really difficult to find Hindi word problem corpora anywhere online. 
-All the prior research work attempting to solve mathematical word problems focuses on English language. There is some significant work done by Cognitive Computation Group at Illinois, WolframAlpha which we will use as a reference for our project. Also, as we could not find a corpus with significant amount of word problems available in Hindi, we aim to create an open source corpus for the same. 
+The aim of our project is to construct a very basic Hindi word problem solver which solves elementary school math problems involving only a single mathematical operation.
+
+Solving word problems is an interesting problem because of the inability to formulate a mathematical representation of the text automatically as it involves additional mathematical reasoning apart from comprehending natural language.
+All the prior research work in this domain focuses on English language. There is significant work done by Cognitive Computation Group at Illinois and Institute of Information Science at Taiwan which we will use as a reference for our project.
+
+[Project proposal]()
+[CSCI 544 2017](http://ron.artstein.org/csci544-2017/research-project.html)
+
+### Members
+[Anjan Shah](https://github.com/anjanshah)
+[Aditya Holikatti](https://github.com/AdityaHolikatti)
+[Priyesh Lakar](https://github.com/PriyeshLakar)
+[Harshita Kasera](https://github.com/hkasera)
+
+
+
