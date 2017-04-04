@@ -1,0 +1,13 @@
+3/-None- लोग/NN एक/QFNUM ट्रेन/NN पर/PREP सवारी/PREP कर/VFM रहे/VAUX हैं/VAUX ।/PUNC पिछली/PREP स्टॉप/NN पर/VFM ,/PUNC 53/-None- लोग/NN ट्रेन/NN से/PREP उतर/VFM गए/VAUX ।/PUNC कितने/PREP लोग/NN स्टॉप/NN से/PREP पहले/JJ ट्रेन/NN से/PREP यात्रा/NN कर/VFM रहे/VAUX थे/VAUX ?/PUNC
+
+एक/QFNUM महिला/NNC 12/-None- सेब/RB और/CC 12/-None- आम/JJ खरीदती/PREP है/VFM ।/PUNC वह/PRP कुल/QF कितने/PREP फल/NN खरीदती/PREP है/VFM ?/PUNC
+
+हैरी/PREP ने/PREP गणित/NN में/PREP 95/-None- अंक/QFNUM ,/PUNC अंग्रेजी/PREP में/PREP 90/-None- अंक/QFNUM और/CC विज्ञान/NNP में/PREP 92/-None- अंक/QFNUM प्राप्त/JVB किए/VFM ।/PUNC उन्होंने/PRP सभी/QF विषयों/PREP में/PREP कुल/QF कितने/PREP अंक/QFNUM प्राप्त/JVB किए/VFM ?/PUNC
+
+550/-None- यात्री/NNC एक/QFNUM ट्रेन/NN से/PREP यात्रा/NN कर/VFM रहे/VAUX थे/VAUX ।/PUNC 289/-None- यात्रियों/PREP ने/PREP अगले/JJ स्टॉप/NN पर/PREP ट्रेन/NN छोड़/-None- दी/VAUX ।अब/RB ट्रेन/NN पर/PREP कितने/PREP यात्री/NNC हैं/VAUX ?/PUNC
+
+रोनाल्ड/NNP के/PREP पास/NN 8/-None- वीडियो/PREP गेम/NN हैं/VFM और/CC उनके/PRP भाई/NN के/PREP पास/NN 6/-None- वीडियो/PREP गेम्स/PRP हैं/VAUX ।/PUNC उनके/PRP पास/PREP कुल/QF कितने/PREP गेम्स/PRP हैं/VAUX ?/PUNC
+
+522/-None- पक्षी/PREP एक/QFNUM पेड़/-None- पर/PREP बैठे/PREP हैं/VFM ।/PUNC अगर/NN 129/-None- पक्षी/PREP उड़ते/PREP हैं/VFM ,/PUNC तो/RP कितने/PREP पक्षी/PREP अभी/RB भी/RP पेड़/-None- पर/PREP बैठे/PREP हैं/VFM ?/PUNC
+
+एक/QFNUM शहर/NN में/PREP 3/-None- चिड़ियाघर/NN हैं/VFM ।/PUNC एक/QFNUM चिड़ियाघर/NN में/PREP 213/-None- जानवर/NN हैं/VFM ,/PUNC दूसरे/QFNUM चिड़ियाघर/NN में/PREP 68/-None- जानवर/NN हैं/VFM और/CC तीसरे/QFNUM चिड़ियाघर/NN में/PREP 177/-None- जानवर/NN हैं/VFM ।/PUNC सभी/QF चिड़ियाघरों/PREP में/VFM ,/PUNC कुल/QF कितने/PREP जानवर/NN हैं/VFM ?/PUNC
