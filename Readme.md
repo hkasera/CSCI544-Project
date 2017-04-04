@@ -1,6 +1,6 @@
 # Maths Word Problem Solver in Hindi 
 
-_CSCI 544 Final Project_
+[_CSCI 544 Final Project_](http://ron.artstein.org/csci544-2017/research-project.html)
 
 The ability to solve word problems is an integral part of our mathematical education because real-life problems almost never present themselves to us in mathematical form. The process of solving word problems involves understanding the components of the problem written in natural language in conjunction with mathematical reasoning.
 
@@ -11,8 +11,6 @@ All the prior research work in this domain focuses on English language. There is
 
 [Project proposal link](https://github.com/hkasera/CSCI544-Project/blob/dev/Project%20Proposal.pdf)
 
-[CSCI 544 2017](http://ron.artstein.org/csci544-2017/research-project.html)
-
 
 ### Members
 * [Anjan Shah](https://github.com/anjanshah)
@@ -22,6 +20,8 @@ All the prior research work in this domain focuses on English language. There is
 * [Priyesh Lakar](https://github.com/PriyeshLakar)
 
 * [Harshita Kasera](https://github.com/hkasera)
+
+### Reference Papers
 
 
 
