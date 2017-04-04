@@ -21,6 +21,10 @@ All the prior research work in this domain focuses on English language. There is
 
 * [Harshita Kasera](https://github.com/hkasera)
 
+### Tools Used
+
+* [Malt Parser](http://www.maltparser.org/) 
+
 ### Reference Papers
 
 
