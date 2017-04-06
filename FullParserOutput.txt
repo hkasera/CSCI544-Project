@@ -1,0 +1,13 @@
+<Sentence id="1">
+1	((	NP	<fs af='baccA,n,m,pl,3,d,0,0' head="bacce" name="NP" drel="k1:VGF">
+1.1	saBI	QF	<fs af='saba,adj,any,pl,,d,,' emph=y name="saBI">
+1.2	bacce	NN	<fs af='baccA,n,m,pl,3,d,0,0' name="bacce">
+	))
+2	((	NP	<fs af='kiwAba,n,f,sg,3,d,0,0' head="kiwAba" name="NP2" drel="k2:VGF">
+2.1	kiwAba	NN	<fs af='kiwAba,n,f,sg,3,d,0,0' name="kiwAba">
+	))
+3	((	VGF	<fs af='paDZa,v,m,pl,1,,wA_hE,wA' head="paDZawe" vpos="tam1_2" name="VGF">
+3.1	paDZawe	VM	<fs af='paDZa,v,m,pl,any,,wA,wA' name="paDZawe">
+3.2	.	SYM	<fs af='.,punc,,,,,,' name=".">
+	))
+</Sentence>
