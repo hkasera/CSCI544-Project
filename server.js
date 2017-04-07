@@ -2,8 +2,9 @@
 //  OpenShift sample Node application
 var express = require('express');
 var fs      = require('fs');
-
-
+var parses  = require('./models.js')
+var crypto = require('crypto');
+var bodyParser = require('body-parser');
 /**
  *  Define the sample application.
  */
@@ -104,6 +105,36 @@ var SampleApp = function() {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('index.html') );
         };
+
+        self.routes['/parses'] = function(req, res) {    
+            parses.getAllParses(req.params,function(err,docs){
+                res.setHeader('Content-Type', 'application/json');
+                if(!err){
+                    res.send(docs);
+                }else{
+                    res.send(err);
+                }
+            }); 
+        };
+
+        self.post_routes = { };
+
+        self.post_routes['/getParse'] = function(req, res){
+            res.header("Content-Type", "application/json; charset=utf-8");
+            //var data = "सभी बच्चे किताब पढ़ते हैं।";
+            var data = req.body.data;
+            var parseId = crypto.createHash('md5').update(data).digest("hex");
+            console.log(parseId);
+            var params = { 'parseId':parseId};
+            parses.getParseById(params,function(err,docs){
+                res.setHeader('Content-Type', 'application/json');
+                if(!err){
+                    res.send(docs);
+                }else{
+                    res.send(err);
+                }
+            });
+        }
     };
 
 
@@ -113,11 +144,17 @@ var SampleApp = function() {
      */
     self.initializeServer = function() {
         self.createRoutes();
-        self.app = express.createServer();
+        self.app = express();
+        self.app.use(bodyParser.json()); // support json encoded bodies
+        self.app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
         //  Add handlers for the app (from the routes).
         for (var r in self.routes) {
             self.app.get(r, self.routes[r]);
+        }
+
+        for (var r in self.post_routes) {
+            self.app.post(r, self.post_routes[r]);
         }
     };
 
