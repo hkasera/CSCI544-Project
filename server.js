@@ -124,7 +124,7 @@ var SampleApp = function() {
             var data = "सभी बच्चे किताब पढ़ते हैं।";
             //var data = req.body.data;
             console.log(data);
-            var parseId = crypto.createHash('md5').update(data).digest("hex");
+            var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
             console.log(parseId);
             var params = { 'parseId':parseId};
             parses.getParseById(params,function(err,docs){
