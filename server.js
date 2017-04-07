@@ -121,11 +121,11 @@ var SampleApp = function() {
 
         self.post_routes['/getParse'] = function(req, res){
             res.header("Content-Type", "application/json; charset=utf-8");
-            var data = "सभी बच्चे किताब पढ़ते हैं।";
-            //var data = req.body.data;
-            console.log(data);
+            //var data = "सभी बच्चे किताब पढ़ते हैं।";
+            var data = req.body.data;
+            //console.log(data);
             var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
-            console.log(parseId);
+            //console.log(parseId);
             var params = { 'parseId':parseId};
             parses.getParseById(params,function(err,docs){
                 res.setHeader('Content-Type', 'application/json');
