@@ -13,5 +13,10 @@ module.exports = {
         db.parses.find({ parseId: sanitized_params.parseId}, function(err, docs) {
             callback(err,docs);
         });
+    },
+    getParseByIds: function(sanitized_params, callback) {
+        db.parses.find({ parseId: { $in: sanitized_params.parseIds}}, function(err, docs) {
+            callback(err,docs);
+        });
     }
 }

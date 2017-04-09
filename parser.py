@@ -6,6 +6,18 @@ import sys
 
 word_list = []
 
+class statement:
+	def __int__(self,obj):
+		self.subject = obj.subject
+		self.quantity = obj.qty
+		self.object = obj.object
+
+class equation:
+	def __init__(self,statements):
+		self.statements = statements
+
+
+
 def parseDep(line):
 	encoded = json.loads(line)
 	strings = encoded[0]['parseText']

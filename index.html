@@ -225,18 +225,29 @@ pre{
             	<br /><br /><br />
             </section>
           </section>
-          <section class="col-xs-12 col-sm-12 col-md-12">
+          <section class="col-xs-12 col-sm-12 col-md-12" >
+          <h2>SSF Output</h2>
+          <p id="ssf-output"></p>
+          <script id="ssf-template" type="x-tmpl-mustache">
 
-                <h2>SSF Output</h2>
+                {{#.}}
+                <h5>{{parseId}}</h5>
 
-                <p><pre id="ssf-output"></pre></p>
-
+                <p><pre>{{parseText}}</pre></p>
+                {{/.}}
+          </script>
           </section>
           <section class="col-xs-12 col-sm-12 col-md-12">
 
                 <h2>Container Output</h2>
+                <p id="container-output"></p>
+                <script id="container-template" type="x-tmpl-mustache">
 
-                <p><pre id="container-output"></pre></p>
+                    {{#.}}
+                      <div><pre id="container-{{parseId}}"></pre></div>
+                    {{/.}}
+                </script>
+                
 
           </section>
           <section class="col-xs-12 col-sm-12 col-md-12">
@@ -253,13 +264,26 @@ pre{
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
 <script type="text/javascript">
+
+  function processText(text){
+    var sentences = text.split("|").filter(function(el,i,r) { return el.trim().length != 0 });
+    if(sentences.length == 1){
+      return { data : text };
+    }
+    sentences.forEach(function(sentence,ind,word_problem){ 
+      if(ind != word_problem.length - 1){ 
+        word_problem[ind] = sentence + "|";
+      } 
+      word_problem[ind] = word_problem[ind].trim();
+    });
+    return { dataArr : sentences };
+  }
 	function getSSF(){
 		var request = new Request('/getParse', {
 			method: 'POST',
-			body: JSON.stringify({
-				data: document.getElementById('hindiText').value
-			}),
+			body: JSON.stringify(processText(document.getElementById('hindiText').value)),
 			headers: new Headers({
 				'Content-Type': 'application/json'
 			})
@@ -267,16 +291,24 @@ pre{
 		fetch(request).then(function(response) {
 		    return response.json();
 		}).then(function(parseObj) { 
-        getContainer(parseObj[0].parseId);
-		  	$("#ssf-output").text(parseObj[0].parseText);
+        var SSFtemplate = $('#ssf-template').html();
+        var Optemplate = $('#container-template').html();
+        Mustache.parse(SSFtemplate);
+        Mustache.parse(Optemplate);
+        var rendered = Mustache.render(SSFtemplate, parseObj);
+        var renderedOp = Mustache.render(Optemplate, parseObj);
+        $("#ssf-output").html(rendered);
+        $("#container-output").html(renderedOp);
+        parseObj.forEach(function(ele){ getContainer(ele.parseId); } );
 		});
 	}
 
   var getContainer = function(parseId){
-      fetch(new Request('/parser/'+parseId)).then(function(response) {
+    fetch(new Request('/parser/'+parseId)).then(function(response) {
         return response.json();
     }).then(function(parseObj) { 
-        $("#container-output").text(JSON.stringify(parseObj,null, '\t'));
+      // console.log(parseObj);
+        $("#container-"+parseId).text(JSON.stringify(parseObj,null, '\t'));
     });
   }
 	$(document).ready(function(){
