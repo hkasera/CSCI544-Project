@@ -233,6 +233,13 @@ pre{
 
           </section>
           <section class="col-xs-12 col-sm-12 col-md-12">
+
+                <h2>Container Output</h2>
+
+                <p><pre id="container-output"></pre></p>
+
+          </section>
+          <section class="col-xs-12 col-sm-12 col-md-12">
           	<p>Credits - <a href="http://ltrc.iiit.ac.in/showfile.php?filename=downloads/shallow_parser.php">Shallow Parsers</a> by IIIT-Hyderabad</p>
           	<p><a href="https://github.com/hkasera/CSCI544-Project">Source Code</a></p>
           </section>
@@ -260,9 +267,18 @@ pre{
 		fetch(request).then(function(response) {
 		    return response.json();
 		}).then(function(parseObj) { 
+        getContainer(parseObj[0].parseId);
 		  	$("#ssf-output").text(parseObj[0].parseText);
 		});
 	}
+
+  var getContainer = function(parseId){
+      fetch(new Request('/parser/'+parseId)).then(function(response) {
+        return response.json();
+    }).then(function(parseObj) { 
+        $("#container-output").text(JSON.stringify(parseObj,null, '\t'));
+    });
+  }
 	$(document).ready(function(){
 		$("#getSSFOPBtn").on("click",getSSF);
 	});

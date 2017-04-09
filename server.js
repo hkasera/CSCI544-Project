@@ -5,6 +5,7 @@ var fs      = require('fs');
 var parses  = require('./models.js')
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
+var spawn = require("child_process").spawn;
 /**
  *  Define the sample application.
  */
@@ -116,6 +117,31 @@ var SampleApp = function() {
                 }
             }); 
         };
+
+        self.routes['/parse/:parseId'] = function(req, res) {    
+            var params = { 'parseId':req.params.parseId};
+            parses.getParseById(params,function(err,docs){
+                res.setHeader('Content-Type', 'application/json');
+                if(!err){
+                    res.send(docs);
+                }else{
+                    res.send(err);
+                }
+            }); 
+        };
+
+        self.routes['/parser/:parseId'] = function(req,res){
+            res.setHeader('Content-Type', 'application/json');
+            var python = spawn('python',["parser.py",self.ipaddress,self.port,req.params.parseId]);
+            var output = "";
+            python.stdout.on('data', function(data){ output += data });
+            python.on('close', function(code){ 
+               if (code !== 0) {  
+                   return res.send(500, code); 
+               }
+               return res.send(200, JSON.parse(output));
+             });
+        }
 
         self.post_routes = { };
 
