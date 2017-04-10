@@ -1,0 +1,40 @@
+<Sentence id="1">
+1	((	NP	<fs af='rAma,n,m,sg,3,d,0_ne,0' head="rAma" vpos="vib1_2" name="NP" drel="k1:VGF">
+1.1	rAma	NNP	<fs af='rAma,n,m,sg,3,d,0,0' name="rAma">
+	))
+2	((	NP	<fs af='seba,n,m,sg,3,d,0,0' head="seba" name="NP2" drel="k2:VGF">
+2.1	10	QC	<fs af='10,num,,,,,,' name="10">
+2.2	seba	NN	<fs af='seba,n,m,sg,3,d,0,0' name="seba">
+	))
+3	((	VGF	<fs af='KarIxa,v,any,sg,2,,e,e' head="KarIxe" name="VGF">
+3.1	KarIxe	VM	<fs af='KarIxa,v,any,sg,2,,e,e' name="KarIxe">
+3.2	.	SYM	<fs af='.,punc,,,,,,' name=".">
+	))
+</Sentence>
+<Sentence id="2">
+1	((	NP	<fs af='rAma,n,m,sg,3,d,0_ne,0' head="rAma" vpos="vib1_2" name="NP" drel="k1:VGF">
+1.1	rAma	NNP	<fs af='rAma,n,m,sg,3,d,0,0' name="rAma">
+	))
+2	((	NP	<fs af='seba,n,m,sg,3,d,0,0' head="seba" name="NP2" drel="k2:VGF">
+2.1	3	QC	<fs af='3,num,,,,,,' name="3">
+2.2	seba	NN	<fs af='seba,n,m,sg,3,d,0,0' name="seba">
+	))
+3	((	VGF	<fs af='KA,v,any,sg,any,,0_le+yA,0' head="KA" vpos="tam1_2" name="VGF">
+3.1	KA	VM	<fs af='KA,v,any,any,any,,0,0' name="KA">
+	))
+</Sentence>
+<Sentence id="3">
+1	((	NP	<fs af='rAma,n,m,sg,3,d,0_ne,0' head="rAma" vpos="vib1_2" name="NP" drel="k1:VGF">
+1.1	rAma	NNP	<fs af='rAma,n,m,sg,3,d,0,0' name="rAma">
+	))
+2	((	NP	<fs af='kiwanA,adj,m,sg,,o,,' poslcat="NM" head="kiwane" name="NP2" drel="nmod:NP3">
+2.1	kiwane	WQ	<fs af='kiwanA,adj,m,sg,,o,,' poslcat="NM" name="kiwane">
+	))
+3	((	NP	<fs af='seba,n,m,sg,3,d,0,0' head="seba" name="NP3" drel="k2:VGF">
+3.1	seba	NN	<fs af='seba,n,m,sg,3,d,0,0' name="seba">
+	))
+4	((	VGF	<fs af='KA,v,any,sg,2,,nahI_e,e' head="KAe" vpos="NEG1_tam2" name="VGF">
+4.1	KAe	VM	<fs af='KA,v,any,sg,2,,e,e' name="KAe">
+4.2	?	SYM	<fs af='?,punc,,,,,,' name="?">
+	))
+</Sentence>
