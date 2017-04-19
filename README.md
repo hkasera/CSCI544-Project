@@ -1,5 +1,7 @@
 # Maths Word Problem Solver in Hindi 
 
+[Project Demo Link](https://csci544-funlab.rhcloud.com/)
+
 [_CSCI 544 Final Project_](http://ron.artstein.org/csci544-2017/research-project.html)
 
 The ability to solve word problems is an integral part of our mathematical education because real-life problems almost never present themselves to us in mathematical form. The process of solving word problems involves understanding the components of the problem written in natural language in conjunction with mathematical reasoning.
