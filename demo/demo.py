@@ -94,8 +94,9 @@ with open("tree.txt",'r') as f:
 		
 		if('Sentence id' in line):
 			f1 = open("sentence.txt","w")
-			id = line.split('="')[1][:-3]
-			#rint(id)
+			id = line.split('="')[1][:-4]
+			#print line.split('="')[1]
+			#print(id)
 		if(line != '</Sentence>'):
 			f1.write(line)
 			#line = f.readline()
@@ -111,6 +112,7 @@ with open("tree.txt",'r') as f:
 			#f1.seek(0)
 			#f1.truncate
 		line = f.readline()
+#print lists
 if (lists['1']['change'] == '-'):
 		lists['1']['quant'] = lists['1']['quant'] * -1
 if (lists['2']['change'] == '-'):
@@ -119,5 +121,6 @@ if (lists['2']['change'] == '-'):
 if(lists['1']['subject'] == lists['2']['subject'] and lists['1']['obj'] == lists['2']['obj']):
 	lists['3']['quant'] = lists['1']['quant'] + lists['2']['quant']
 
+print(str(lists['1']['quant']) + "+" + str(lists['2']['quant']) + "=" + str(lists['3']['quant']))
 print(lists['3']['quant'])
 

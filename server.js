@@ -6,6 +6,7 @@ var parses  = require('./models.js')
 var crypto = require('crypto');
 var bodyParser = require('body-parser');
 var spawn = require("child_process").spawn;
+
 /**
  *  Define the sample application.
  */
@@ -151,11 +152,14 @@ var SampleApp = function() {
             var dataArr = req.body.dataArr;
             if(data){
                 var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
-                var params = { 'parseId':parseId};
+                var params = { 'parseId':parseId,'data':data};
                 parses.getParseById(params,function(err,docs){
                     res.setHeader('Content-Type', 'application/json');
                     if(!err){
-                        res.send(docs);
+                        if(docs.length == 0){
+                            parses.storeIntoDB(data,res);
+                        }
+                        else { res.send(docs); }
                     }else{
                         res.send(err);
                     }

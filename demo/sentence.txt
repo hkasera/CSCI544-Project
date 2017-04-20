@@ -1,0 +1,15 @@
+<Sentence id="3">
+1	((	NP	<fs af='SyAma,n,m,sg,3,d,0_ne,0' head="SyAma" vpos="vib1_2" name="NP" drel="k1:VGF">
+1.1	SyAma	NNP	<fs af='SyAma,n,m,sg,3,d,0,0' name="SyAma">
+	))
+2	((	NP	<fs af='kula,adj,any,any,,any,,' head="kula" name="NP2" drel="nmod:NP3">
+2.1	kula	QF	<fs af='kula,adj,any,any,,any,,' name="kula">
+	))
+3	((	NP	<fs af='matakA,n,m,pl,3,d,0,0' head="matake" name="NP3" drel="k2:VGF">
+3.1	kiwane	WQ	<fs af='kiwanA,adj,m,sg,,o,,' poslcat="NM" name="kiwane">
+3.2	matake	NN	<fs af='matakA,n,m,pl,3,d,0,0' name="matake">
+	))
+4	((	VGF	<fs af='banA,v,any,sg,2,,e,e' head="banAe" name="VGF">
+4.1	banAe	VM	<fs af='banA,v,any,sg,2,,e,e' name="banAe">
+4.2	?	SYM	<fs af='?,punc,,,,,,' name="?">
+	))
