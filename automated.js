@@ -16,12 +16,12 @@ pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/index.cgi', function(stat
   	pager.render('screen.png');
     //var TEXT = "नदी के दाहिने किनारे पर 8 पेड़ हैं।";
     var value = pager.evaluate(function(TEXT) {
-        //console.log(TEXT);
+        console.log(TEXT);
     		document.getElementsByTagName('textarea')[0].value = TEXT;
       	document.getElementById("form1").submit.click();
         return document.getElementsByTagName('textarea')[0].value;
     },TEXT);
-    //console.log(value);
+    console.log(value);
     //phantom.exit();
   }
   //phantom.exit();
@@ -33,12 +33,12 @@ pager.onConsoleMessage = function(msg) {
 
 pager.onLoadFinished = function(){
     pager.render("nextPage.png");
-    //console.log('Content: ' + pager.url);
+    console.log('Content: ' + pager.url);
 
     if(pager.url == 'http://ltrc.iiit.ac.in/full_analyzer/hindi/run.cgi'){
         pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/out.txt', function(status) {
         if (status !== 'success') {
-          //console.log('Unable to access network');
+          console.log('Unable to access network');
         } else {
           var content = pager.evaluate(function() {
             return document.getElementsByTagName('pre')[0].innerText;
