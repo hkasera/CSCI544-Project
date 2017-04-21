@@ -33,7 +33,10 @@ module.exports = {
         var output = "";
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
         phantom.stdout.setEncoding('utf8');
-        phantom.stdout.on('data', function(rdata){ output += rdata });
+        phantom.stdout.on('data', function(rdata){
+            console.log(data); 
+            output += rdata 
+        });
         phantom.on('close', function(code){ 
             if (code !== 0) {  
                 return res.send(500, code); 
