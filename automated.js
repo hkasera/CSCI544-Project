@@ -1,13 +1,15 @@
 var pager = require('webpage').create();
 var system = require('system');
 var args = system.args;
+var fs = require('fs');
+var path = 'output.txt';
 args = args.splice(1)
 
 
 var TEXT = args.join(" ");
 
-console.log(TEXT);
-phantom.exit();
+//console.log(TEXT);
+//phantom.exit();
 
 pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/index.cgi', function(status) {
   if (status !== 'success') {
@@ -40,10 +42,11 @@ pager.onLoadFinished = function(){
         if (status !== 'success') {
           console.log('Unable to access network');
         } else {
-          var content = pager.evaluate(function() {
+          var content = pager.evaluate(function(path) {
             return document.getElementsByTagName('pre')[0].innerText;
-          });
-          console.log(content);
+          },path);
+          fs.write(path, content, 'w');
+          console.log(content)
           phantom.exit();
           
         }
