@@ -4,6 +4,10 @@ var mongojs = require('mongojs');
 var ObjectId = mongojs.ObjectId; 
 var phantomjs = require('phantomjs')
 var phantomjsPath = phantomjs.path
+if (process.env.OPENSHIFT_NODEJS_IP) {
+    phantomjsPath = "/var/lib/openshift/58e6fdc62d5271985600016d/app-root/runtime/repo/node_modules/phantomjs/lib/phantom/bin/phantomjs";
+}
+
 var crypto = require('crypto');
 var spawn = require("child_process").spawn;
 module.exports = {
