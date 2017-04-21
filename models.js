@@ -27,6 +27,8 @@ module.exports = {
         });
     },
     storeIntoDB:function(data,res){
+        console.log(phantomjsPath);
+        console.log(data);
         var phantom = spawn(phantomjsPath,["automated.js",data]);
         var output = "";
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
