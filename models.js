@@ -34,7 +34,7 @@ module.exports = {
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
         phantom.stdout.setEncoding('utf8');
         phantom.stdout.on('data', function(rdata){
-            console.log(rdata); 
+            console.log(rdata.toString()); 
             output += rdata 
         });
         console.log(output); 
