@@ -6,8 +6,8 @@ args = args.splice(1)
 
 var TEXT = args.join(" ");
 
-//console.log(TEXT);
-//phantom.exit();
+console.log(TEXT);
+phantom.exit();
 
 pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/index.cgi', function(status) {
   if (status !== 'success') {
