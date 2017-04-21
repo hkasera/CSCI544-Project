@@ -9,7 +9,7 @@ if (process.env.OPENSHIFT_NODEJS_IP) {
 }
 
 var crypto = require('crypto');
-var spawn = require("child_process").spawn;
+var child_process = require("child_process");
 module.exports = {
 	getAllParses: function(sanitized_params, callback) {
         db.parses.find({}, function(err, docs) {
@@ -29,7 +29,27 @@ module.exports = {
     storeIntoDB:function(data,res){
         console.log(phantomjsPath);
         console.log(data);
-        var phantom = spawn(phantomjsPath,["automated.js",data]);
+        var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
+        var phantom = child_process.exec(phantomjsPath+" automated.js "+data , function (error, stdout, stderr) {
+           if (error) {
+             console.log(error.stack);
+             //console.log('Error code: '+error.code);
+             //console.log('Signal received: '+error.signal);
+             return res.send(500, 'Error'); 
+           }
+           console.log('Child Process STDOUT: '+stdout);
+           var storeData = {
+                "parseId": parseId,
+                "parseText": stdout
+              };
+            return res.send(200, storeData);
+          console.log('Child Process STDERR: '+stderr);
+         });
+
+         phantom.on('exit', function (code) {
+           console.log('Child process exited with exit code '+code);
+         });
+        /*var phantom = spawn(phantomjsPath,["automated.js",data]);
         var output = "";
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
         phantom.stdout.setEncoding('utf8');
@@ -51,6 +71,6 @@ module.exports = {
                 return res.send(200, result);
             });
             
-        });
+        });*/
     }
 }
