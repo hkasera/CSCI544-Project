@@ -36,6 +36,7 @@ module.exports = {
            if (error) {
              return res.send(500, 'Error'); 
            }
+           console.log(stdout);
            console.log(stderr);
          });
 
