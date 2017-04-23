@@ -39,7 +39,7 @@ module.exports = {
 
          phantom.on('exit', function (code) {
            if(code == 0){
-                fs.readFile('output.txt', 'utf8', function (err,stdout) {
+                fs.readFile(process.env.OPENSHIFT_DATA_DIR+'output.txt', 'utf8', function (err,stdout) {
                   if (err) {
                     return console.log(err);
                   }
