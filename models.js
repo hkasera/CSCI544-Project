@@ -28,37 +28,44 @@ module.exports = {
         });
     },
     storeIntoDB:function(data,res){
-        console.log(phantomjsPath+" automated.js "+data );
-        console.log(phantomjs.path);
-        console.log(__dirname+"/automated.js")
+        //console.log(phantomjsPath+" automated.js "+data );
+        //console.log(phantomjs.path);
+        //console.log(__dirname+"/automated.js")
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
-        var phantom = child_process.exec(phantomjsPath+" "+__dirname+"/automated.js "+data , function (error, stdout, stderr) {
-           if (error) {
-             return res.send(500, 'Error'); 
-           }
-           console.log(stdout);
-           console.log(stderr);
-         });
-
-         phantom.on('exit', function (code) {
-           if(code == 0){
-                fs.readFile(process.env.OPENSHIFT_DATA_DIR+'output.txt', 'utf8', function (err,stdout) {
-                  if (err) {
-                    return console.log(err);
-                  }
-                    var storeData = {
-                       "parseId": parseId,
-                        "parseText": stdout
-                    };
-                    db.parses.insert(storeData, function(err, result) {
-                        if(err) { return res.send(500, err);  }
-                        return res.send(200, result);
-                    });
-                });
-                
-           }else{
+        fs.writeFile(process.env.OPENSHIFT_DATA_DIR+'input.txt', data, function(err) {
+            if(err) {
                 return res.send(500, 'Error'); 
-           }
-         });
+            }
+            console.log("The file was saved!");
+            var phantom = child_process.exec(phantomjsPath+" "+__dirname+"/automated.js" , function (error, stdout, stderr) {
+               if (error) {
+                 return res.send(500, 'Error'); 
+               }
+               console.log(stdout);
+               console.log(stderr);
+             });
+
+            phantom.on('exit', function (code) {
+               if(code == 0){
+                    fs.readFile(process.env.OPENSHIFT_DATA_DIR+'output.txt', 'utf8', function (err,stdout) {
+                      if (err) {
+                        return console.log(err);
+                      }
+                        var storeData = {
+                           "parseId": parseId,
+                            "parseText": stdout
+                        };
+                        db.parses.insert(storeData, function(err, result) {
+                            if(err) { return res.send(500, err);  }
+                            return res.send(200, result);
+                        });
+                    });
+                    
+               }else{
+                    return res.send(500, 'Error'); 
+               }
+             });
+        }); 
+        
     }
 }
