@@ -28,8 +28,8 @@ module.exports = {
         });
     },
     storeIntoDB:function(data,res){
-        console.log(phantomjsPath);
-        console.log(data);
+        console.log(phantomjsPath+" automated.js "+data );
+        //console.log(data);
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
         var phantom = child_process.exec(phantomjsPath+" automated.js "+data , function (error, stdout, stderr) {
            if (error) {
