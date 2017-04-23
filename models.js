@@ -3,7 +3,7 @@ var parses = db.collection('parses');
 var mongojs = require('mongojs');
 var ObjectId = mongojs.ObjectId; 
 var phantomjs = require('phantomjs')
-var phantomjsPath = phantomjs.path
+var phantomjsPath = phantomjs.path;
 if (process.env.OPENSHIFT_NODEJS_IP) {
     phantomjsPath = "/var/lib/openshift/58e6fdc62d5271985600016d/app-root/runtime/repo/node_modules/phantomjs/lib/phantom/bin/phantomjs";
 }
@@ -29,9 +29,10 @@ module.exports = {
     },
     storeIntoDB:function(data,res){
         console.log(phantomjsPath+" automated.js "+data );
-        //console.log(data);
+        console.log(phantomjs.path);
+        console.log(__dirname+"/automated.js")
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
-        var phantom = child_process.exec(phantomjsPath+" automated.js "+data , function (error, stdout, stderr) {
+        var phantom = child_process.exec(phantomjsPath+" "+__dirname+"/automated.js "+data , function (error, stdout, stderr) {
            if (error) {
              return res.send(500, 'Error'); 
            }
