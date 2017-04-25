@@ -221,7 +221,7 @@ pre{
 				<div class="form-group">
 				    <textarea class="form-control" id="hindiText" rows="10" placeholder="Enter Text in Hindi"></textarea>
 			  	</div>
-			  	<button type="button" id="getSSFOPBtn" class="btn btn-primary">Submit</button>
+			  	<button type="button" id="getSSFOPBtn" data-loading-text="Loading..." class="btn btn-primary">Submit</button>
             	<br /><br /><br />
             </section>
           </section>
@@ -231,7 +231,7 @@ pre{
           <script id="ssf-template" type="x-tmpl-mustache">
 
                 {{#.}}
-                <h5>{{parseId}}</h5>
+                <h5>Sentence : {{sentence}}</h5>
 
                 <p><pre>{{parseText}}</pre></p>
                 {{/.}}
@@ -265,22 +265,24 @@ pre{
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 
   function processText(text){
-    var sentences = text.split("|").filter(function(el,i,r) { return el.trim().length != 0 });
+    var sentences = text.split("।").filter(function(el,i,r) { return el.trim().length != 0 });
     if(sentences.length == 1){
       return { data : text };
     }
     sentences.forEach(function(sentence,ind,word_problem){ 
       if(ind != word_problem.length - 1){ 
-        word_problem[ind] = sentence + "|";
+        word_problem[ind] = sentence + "।";
       } 
       word_problem[ind] = word_problem[ind].trim();
     });
     return { dataArr : sentences };
   }
 	function getSSF(){
+    $("#getSSFOPBtn").button('loading');
 		var request = new Request('/getParse', {
 			method: 'POST',
 			body: JSON.stringify(processText(document.getElementById('hindiText').value)),
@@ -299,7 +301,8 @@ pre{
         var renderedOp = Mustache.render(Optemplate, parseObj);
         $("#ssf-output").html(rendered);
         $("#container-output").html(renderedOp);
-        parseObj.forEach(function(ele){ getContainer(ele.parseId); } );
+        //parseObj.forEach(function(ele){ getContainer(ele.parseId); } );
+        $("#getSSFOPBtn").button('reset');
 		});
 	}
 

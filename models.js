@@ -1,16 +1,17 @@
 var db = require("./db.js");
-var parses = db.collection('parses');
-var mongojs = require('mongojs');
-var ObjectId = mongojs.ObjectId; 
-var phantomjs = require('phantomjs')
-var phantomjsPath = phantomjs.path;
-if (process.env.OPENSHIFT_NODEJS_IP) {
-    phantomjsPath = "/var/lib/openshift/58e6fdc62d5271985600016d/app-root/runtime/repo/node_modules/phantomjs/lib/phantom/bin/phantomjs";
-}
 var fs = require('fs');
-
 var crypto = require('crypto');
-var child_process = require("child_process");
+var parseTree = require("./fetchParseTree.js");
+var mongojs = require('mongojs');
+var phantomjs = require('phantomjs')
+var helper = require("./helper.js");
+var inputPath = helper.inputPath;
+var parses = db.collection('parses');
+var ObjectId = mongojs.ObjectId; 
+
+
+
+
 module.exports = {
 	getAllParses: function(sanitized_params, callback) {
         db.parses.find({}, function(err, docs) {
@@ -27,44 +28,51 @@ module.exports = {
             callback(err,docs);
         });
     },
+    storeParse:function(storeData,callback){
+        db.parses.insert(storeData, function(err, result) {
+            callback(err,result);
+        });
+    },
+    storeSentence:function(storeData,callback){
+        db.sentences.insert(storeData, function(err, result) {
+            callback(err,result);
+        });
+    },
     storeIntoDB:function(data,res){
-        //console.log(phantomjsPath+" automated.js "+data );
-        //console.log(phantomjs.path);
-        //console.log(__dirname+"/automated.js")
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
-        fs.writeFile(process.env.OPENSHIFT_DATA_DIR+'input.txt', data, function(err) {
-            if(err) {
+
+        /*var storeSentence = {
+            "sentenceId": parseId,
+            "sentence": data
+        };
+        module.exports.storeSentence(storeSentence, function(err, result) {
+           
+        });*/
+        fs.writeFile(inputPath+parseId+'.txt', data, function(err) {
+            if(err) {      
                 return res.send(500, 'Error'); 
             }
-            console.log("The file was saved!");
-            var phantom = child_process.exec(phantomjsPath+" "+__dirname+"/automated.js" , function (error, stdout, stderr) {
-               if (error) {
-                 return res.send(500, 'Error'); 
-               }
-               console.log(stdout);
-               console.log(stderr);
-             });
 
-            phantom.on('exit', function (code) {
-               if(code == 0){
-                    fs.readFile(process.env.OPENSHIFT_DATA_DIR+'output.txt', 'utf8', function (err,stdout) {
-                      if (err) {
-                        return console.log(err);
-                      }
-                        var storeData = {
-                           "parseId": parseId,
-                            "parseText": stdout
-                        };
-                        db.parses.insert(storeData, function(err, result) {
-                            if(err) { return res.send(500, err);  }
-                            return res.send(200, result);
-                        });
-                    });
-                    
-               }else{
+            parseTree.fetchParseTree(parseId,function(error,tree){
+                if(error){
                     return res.send(500, 'Error'); 
-               }
-             });
+                }
+
+                var storeData = {
+                    "parseId": parseId,
+                    "parseText": tree,
+                    "sentence":data
+                };
+
+                module.exports.storeParse(storeData, function(err, result) {
+                    if(err) { 
+                        return res.send(500, err);  
+                    }
+                    return res.send(200, result);
+                });
+
+            });
+
         }); 
         
     }

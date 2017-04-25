@@ -1,9 +1,12 @@
 var pager = require('webpage').create();
 var system = require('system');
-var args = system.args.splice(1);
+var parseId = system.args.splice(1);
 var fs = require('fs');
 var env = system.env;
-var TEXT = fs.read(env["OPENSHIFT_DATA_DIR"]+"input.txt");
+console.log(env);
+env["OPENSHIFT_DATA_DIR"] = "data/";
+var TEXT = fs.read(env["OPENSHIFT_DATA_DIR"]+"input/"+parseId+".txt");
+console.log(TEXT);
 pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/index.cgi', function(status) {
     if (status !== 'success') {
         phantom.exit();
@@ -30,7 +33,7 @@ pager.onLoadFinished = function() {
                     return document.getElementsByTagName('pre')[0].innerText;
                 });
                 try{
-                    fs.write(env["OPENSHIFT_DATA_DIR"]+"output.txt", content, 'w');
+                    fs.write(env["OPENSHIFT_DATA_DIR"]+"output/"+parseId+".txt", content, 'w');
                 }catch(e){
                     console.log(e);
                 }
