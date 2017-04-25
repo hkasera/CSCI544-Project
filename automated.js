@@ -1,13 +1,15 @@
 var pager = require('webpage').create();
 var system = require('system');
 var parseId = system.args.splice(1);
+console.log(parseId);
 var fs = require('fs');
 var env = system.env;
-if("OPENSHIFT_DATA_DIR" not in env){
-    env["OPENSHIFT_DATA_DIR"] = "data/";
+if(!("OPENSHIFT_DATA_DIR" in env)){
+    env["OPENSHIFT_DATA_DIR"] = fs.workingDirectory + "/data/";
 }
 var TEXT = fs.read(env["OPENSHIFT_DATA_DIR"]+"input/"+parseId+".txt");
 console.log(TEXT);
+phantom.exit();
 pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/index.cgi', function(status) {
     if (status !== 'success') {
         phantom.exit();
