@@ -9,7 +9,7 @@ if(!("OPENSHIFT_DATA_DIR" in env)){
 }
 var TEXT = fs.read(env["OPENSHIFT_DATA_DIR"]+"input/"+parseId+".txt");
 console.log(TEXT);
-phantom.exit();
+
 pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/index.cgi', function(status) {
     if (status !== 'success') {
         phantom.exit();
