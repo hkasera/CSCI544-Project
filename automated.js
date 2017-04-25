@@ -3,8 +3,9 @@ var system = require('system');
 var parseId = system.args.splice(1);
 var fs = require('fs');
 var env = system.env;
-console.log(env);
-env["OPENSHIFT_DATA_DIR"] = "data/";
+if("OPENSHIFT_DATA_DIR" not in env){
+    env["OPENSHIFT_DATA_DIR"] = "data/";
+}
 var TEXT = fs.read(env["OPENSHIFT_DATA_DIR"]+"input/"+parseId+".txt");
 console.log(TEXT);
 pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/index.cgi', function(status) {
