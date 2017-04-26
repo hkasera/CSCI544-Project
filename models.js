@@ -29,7 +29,17 @@ module.exports = {
         });
     },
     storeParse:function(storeData,callback){
-        db.parses.insert(storeData, function(err, result) {
+        /*db.parses.insert(storeData, function(err, result) {
+            callback(err,result);
+        });*/
+        db.parses.findAndModify({
+          query: { parseId: storeData.parseId },
+          update: {
+            $setOnInsert: storeData
+          },
+          new: true,   // return new doc if one is upserted
+          upsert: true // insert the document if it does not exist
+        },function(err,result){
             callback(err,result);
         });
     },
@@ -52,6 +62,52 @@ module.exports = {
             db.posTag.insert(storeData, function(err, result) {
                 callback(err,result);
             });
+        });
+    },
+    parseStoreIntoDB:function(data,callback){
+        var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
+
+        module.exports.getParseById({"parseId":parseId},function(err,docs){
+            if(err){
+                callback(err,docs);
+            }
+            if(docs.length == 0){
+                fs.writeFile(inputPath+parseId+'.txt', data, function(err) {
+                    if(err) {      
+                        return callback(err,null); 
+                    }
+
+                    parseTree.fetchParseTree(parseId,function(error,tree){
+                        if(error){
+                            return callback(err,null); 
+                        }
+
+                        var storeData = {
+                            "parseId": parseId,
+                            "parseText": tree,
+                            "sentence":data
+                        };
+
+                        module.exports.storeParse(storeData, function(err, result) {
+                            if(err) { 
+                                return callback(err,null); 
+                            }
+                           return callback(null,result); 
+                        });
+
+                    });
+
+                });
+
+            }else{
+                return callback(null,docs[0]);
+            }
+        }); 
+        
+    },
+    storeAndFetchSentences:function(dataArr,callback){
+        async.map(dataArr, module.exports.parseStoreIntoDB, function(err, results) {
+            callback(err,results);
         });
     },
     storeIntoDB:function(data,res){

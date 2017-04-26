@@ -159,37 +159,16 @@ var SampleApp = function() {
 
         self.post_routes['/getParse'] = function(req, res){
             res.header("Content-Type", "application/json; charset=utf-8");
-            var data = req.body.data;
             var dataArr = req.body.dataArr;
-            if(data){
-                var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
-                var params = { 'parseId':parseId,'data':data};
-                parses.getParseById(params,function(err,docs){
-                    res.setHeader('Content-Type', 'application/json');
-                    if(!err){
-                        if(docs.length == 0){
-                            parses.storeIntoDB(data,res);
-                        }
-                        else { res.send(docs); }
-                    }else{
-                        res.send(err);
-                    }
-                });
-            }else if(dataArr){
-                var parseIds = dataArr.map(function(data){
-                    return crypto.createHash('md5').update(data,'utf-8').digest("hex");
-                });
-                var params = { 'parseIds':parseIds};
-                parses.getParseByIds(params,function(err,docs){
-                    res.setHeader('Content-Type', 'application/json');
-                    if(!err){
-                        res.send(docs);
-                    }else{
-                        res.send(err);
-                    }
-                });
-            }else{
+            if(!dataArr || dataArr.length == 0){
                 return res.send(500);
+            }else {
+                parses.storeAndFetchSentences(dataArr,function(err,docs){
+                    if(err){
+                        return res.send(500,err);
+                    }
+                    return res.send(200,docs);
+                });
             }
             
         }

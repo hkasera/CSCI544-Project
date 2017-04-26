@@ -4,8 +4,8 @@ import requests
 import sys
 from bs4 import BeautifulSoup
 
-sys.argv.pop(0)
-text = " ".join(sys.argv)
+#sys.argv.pop(0)
+text = "4 सेब गिर गए |"
 print text
 
 r = requests.post("http://text-processing.com/demo/tag/",data={"tagger":"hindi","text":text})

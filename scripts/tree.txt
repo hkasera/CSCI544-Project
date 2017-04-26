@@ -1,0 +1,16 @@
+<Sentence id="1">
+1	((	NP	<fs af='rameSa,unk,,,,,0_ne,' head="rameSa" poslcat="NM" vpos="vib1_2" name="NP" drel="k1:VGF">
+1.1	rameSa	NN	<fs af='rameSa,unk,,,,,,' poslcat="NM" name="rameSa">
+	))
+2	((	NP	<fs af='kiwAba,n,f,pl,3,d,0_meM_se,0' head="kiwAbeM_2" vpos="vib2_3_4" name="NP2" drel="k5:VGF">
+2.1	12	QC	<fs af='12,num,,,,,,' name="12">
+2.2	kiwAbeM	NN	<fs af='kiwAba,n,f,pl,3,d,0,0' name="kiwAbeM_2">
+	))
+3	((	NP	<fs af='kiwAba,n,f,pl,3,d,0,0' head="kiwAbeM" name="NP3" drel="k2:VGF">
+3.1	2	QC	<fs af='2,num,,,,,,' name="2">
+3.2	kiwAbeM	NN	<fs af='kiwAba,n,f,pl,3,d,0,0' name="kiwAbeM">
+	))
+4	((	VGF	<fs af='xe,v,f,sg,any,,yA,yA' head="xI" name="VGF">
+4.1	xI	VM	<fs af='xe,v,f,sg,any,,yA,yA' name="xI">
+	))
+</Sentence>

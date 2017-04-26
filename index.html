@@ -277,9 +277,6 @@ pre{
 
   function processText(text){
     var sentences = text.split("।").filter(function(el,i,r) { return el.trim().length != 0 });
-    if(sentences.length == 1){
-      return { data : text };
-    }
     sentences.forEach(function(sentence,ind,word_problem){ 
       if(ind != word_problem.length - 1){ 
         word_problem[ind] = sentence + "।";

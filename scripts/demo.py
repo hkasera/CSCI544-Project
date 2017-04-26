@@ -1,6 +1,7 @@
 import re
-verb_dict = {'KarIxe':'+','KA':'-','KAe':'-','banAe':'+' ,'xie':'-','hEM':'+','We' : '+','uware':'-'}
+verb_dict = {'KarIxe':'+','KA':'-','KAe':'-','banAe':'+' ,'xie':'-','hEM':'+','We' : '+','uware':'-','xI':'+'}
 def aditya():
+	init_qty = ""
 	flag_loc = 0
 	flag_exchange = 0
 	subject = ''
