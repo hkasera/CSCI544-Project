@@ -47,10 +47,15 @@ module.exports = {
             callback(err, result);
         });
     },
-    storeSentence: function(storeData, callback) {
+    storeSentence: function(data, callback) {
+        var parseId = crypto.createHash('md5').update(data, 'utf-8').digest("hex");
+        var storeData = {
+            "sentenceId": parseId,
+            "sentence": data
+        };
         db.sentences.findAndModify({
             query: {
-                parseId: storeData.parseId
+                sentenceId: storeData.sentenceId
             },
             update: {
                 $setOnInsert: storeData

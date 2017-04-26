@@ -52,6 +52,7 @@ def parseDep(line):
 			obj = obj+' '+ each_word[0]
 	return_obj["subject"] = str(subject).strip()
 	return_obj["object"] = str(obj).strip()
+	return_obj["operator"] = "+"
 	return_obj["qty"] = str(qty).strip()
 	return json.dumps(return_obj)
 

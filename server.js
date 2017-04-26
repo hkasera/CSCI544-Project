@@ -147,8 +147,8 @@ var EquationSolverApp = function() {
 
         self.post_routes = { };
 
-        self.post_routes['/getPosTag'] = function(req,res){       
-            parses.fetchAndStorePosTag(req.body.data,function(err,docs){
+        self.post_routes['/saveStatement'] = function(req,res){       
+            parses.storeSentence(req.body.data,function(err,docs){
                     if(!err){
                         res.send(docs);
                     }else{
