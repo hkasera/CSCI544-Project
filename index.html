@@ -237,13 +237,13 @@ pre{
                 {{/.}}
           </script>
           </section>
-          <section class="col-xs-12 col-sm-12 col-md-12">
+         <!-- <section class="col-xs-12 col-sm-12 col-md-12">
 
                 <h2>Pos Tagger</h2>
                 <p id="pos-output"></p>
                 
 
-          </section>
+          </section>-->
           <section class="col-xs-12 col-sm-12 col-md-12">
 
                 <h2>Container Output</h2>
@@ -325,11 +325,11 @@ pre{
         }
         return parseObj;       
     });
-    fetch(posrequest).then(function(response) {
+    /*fetch(posrequest).then(function(response) {
         return response.json();
     }).then(function(parseObj) {       
         $("#pos-output").html(parseObj.posTag);
-    });
+    });*/
 	}
 
   var getContainer = function(parseId){
