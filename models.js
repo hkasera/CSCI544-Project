@@ -8,7 +8,7 @@ var helper = require("./helper.js");
 var inputPath = helper.inputPath;
 var parses = db.collection('parses');
 var ObjectId = mongojs.ObjectId; 
-
+var async = require('async');
 
 
 
@@ -20,10 +20,10 @@ module.exports = {
     },
     getParseById: function(sanitized_params, callback) {
         db.parses.find({ parseId: sanitized_params.parseId}, function(err, docs) {
-            callback(err,docs);
+             callback(err,docs);
         });
     },
-    getParseByIds: function(sanitized_params, callback) {
+    getParseByIds: function(sanitized_params, callback) {    
         db.parses.find({ parseId: { $in: sanitized_params.parseIds}}, function(err, docs) {
             callback(err,docs);
         });
@@ -38,16 +38,25 @@ module.exports = {
             callback(err,result);
         });
     },
+    storePosTag:function(storeData,callback){
+        db.posTag.insert(storeData, function(err, result) {
+            callback(err,result);
+        });
+    },
+    fetchAndStorePosTag:function(data,callback){
+        parseTree.fetchPosTag(data,function(err,storeData){
+            if(err){
+                callback(err,null);
+            }
+
+            db.posTag.insert(storeData, function(err, result) {
+                callback(err,result);
+            });
+        });
+    },
     storeIntoDB:function(data,res){
         var parseId = crypto.createHash('md5').update(data,'utf-8').digest("hex");
 
-        /*var storeSentence = {
-            "sentenceId": parseId,
-            "sentence": data
-        };
-        module.exports.storeSentence(storeSentence, function(err, result) {
-           
-        });*/
         fs.writeFile(inputPath+parseId+'.txt', data, function(err) {
             if(err) {      
                 return res.send(500, 'Error'); 

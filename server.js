@@ -131,6 +131,7 @@ var SampleApp = function() {
             }); 
         };
 
+
         self.routes['/parser/:parseId'] = function(req,res){
             res.setHeader('Content-Type', 'application/json');
             var python = spawn('python',["parser.py",self.ipaddress,self.port,req.params.parseId]);
@@ -145,6 +146,16 @@ var SampleApp = function() {
         }
 
         self.post_routes = { };
+
+        self.post_routes['/getPosTag'] = function(req,res){       
+            parses.fetchAndStorePosTag(req.body.data,function(err,docs){
+                    if(!err){
+                        res.send(docs);
+                    }else{
+                        res.send(err);
+                    }
+            });
+        }
 
         self.post_routes['/getParse'] = function(req, res){
             res.header("Content-Type", "application/json; charset=utf-8");
