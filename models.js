@@ -106,7 +106,7 @@ module.exports = {
         
     },
     storeAndFetchSentences:function(dataArr,callback){
-        async.map(dataArr, module.exports.parseStoreIntoDB, function(err, results) {
+        async.mapSeries(dataArr, module.exports.parseStoreIntoDB, function(err, results) {
             callback(err,results);
         });
     },
