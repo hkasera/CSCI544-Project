@@ -10,7 +10,7 @@ var spawn = require("child_process").spawn;
 /**
  *  Define the sample application.
  */
-var SampleApp = function() {
+var EquationSolverApp = function() {
 
     //  Scope.
     var self = this;
@@ -227,7 +227,7 @@ var SampleApp = function() {
 /**
  *  main():  Main code.
  */
-var zapp = new SampleApp();
+var zapp = new EquationSolverApp();
 zapp.initialize();
 zapp.start();
 

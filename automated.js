@@ -1,14 +1,14 @@
 var pager = require('webpage').create();
 var system = require('system');
 var parseId = system.args.splice(1);
-console.log(parseId);
+
 var fs = require('fs');
 var env = system.env;
-if(!("OPENSHIFT_DATA_DIR" in env)){
+if (!("OPENSHIFT_DATA_DIR" in env)) {
     env["OPENSHIFT_DATA_DIR"] = fs.workingDirectory + "/data/";
 }
-var TEXT = fs.read(env["OPENSHIFT_DATA_DIR"]+"input/"+parseId+".txt");
-console.log(TEXT);
+var TEXT = fs.read(env["OPENSHIFT_DATA_DIR"] + "input/" + parseId + ".txt");
+
 
 pager.open('http://ltrc.iiit.ac.in/full_analyzer/hindi/index.cgi', function(status) {
     if (status !== 'success') {
@@ -35,9 +35,9 @@ pager.onLoadFinished = function() {
                 var content = pager.evaluate(function() {
                     return document.getElementsByTagName('pre')[0].innerText;
                 });
-                try{
-                    fs.write(env["OPENSHIFT_DATA_DIR"]+"output/"+parseId+".txt", content, 'w');
-                }catch(e){
+                try {
+                    fs.write(env["OPENSHIFT_DATA_DIR"] + "output/" + parseId + ".txt", content, 'w');
+                } catch (e) {
                     console.log(e);
                 }
                 console.log("Done")
