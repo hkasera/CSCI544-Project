@@ -263,7 +263,7 @@ pre{
                       <div><pre id="equation-{{parseId}}"></pre></div>
                     {{/.}}
                 </script>
-                
+                <div><pre id="result"></pre></div>
 
           </section>
           <section class="col-xs-12 col-sm-12 col-md-12">
@@ -378,7 +378,19 @@ var sentences = [];
   var processEquation = function(){
     var variables = [];
     var variable = "";
+    var finalObj = {};
     for(i = 0; i < statements.length ; ++i){
+      if(!("subject" in finalObj) && !("object" in finalObj)){
+        finalObj["subject"] = statements[i].subject;
+        finalObj["object"] = statements[i].object;
+        finalObj["quantity"] = 0;
+        if(getQuantity(statements[i].operator,statements[i].qty) != "Unknown"){
+          finalObj["quantity"] = parseInt(getQuantity(statements[i].operator,statements[i].qty),10);
+        }
+      }else if(getQuantity(statements[i].operator,statements[i].qty) != "Unknown"){
+        finalObj["quantity"] = finalObj["quantity"] + parseInt(getQuantity(statements[i].operator,statements[i].qty),10);
+      }
+
       var html = "";
       var same_var = false;
       if(i == 0 || ( i != 0 && statements[i].object != statements[i-1].object)){
@@ -408,6 +420,7 @@ var sentences = [];
       }
       $("#equation-"+statements[i].parseId).html(html);
     }
+    $("#result").html("The answer is "+ finalObj["quantity"]);
   }
 	$(document).ready(function(){
 		$("#getSSFOPBtn").on("click",getSSF);
