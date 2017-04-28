@@ -47,6 +47,7 @@ var EquationSolverApp = function() {
 
         //  Local cache for static content.
         self.zcache['index.html'] = fs.readFileSync('./index.html');
+        self.zcache['algebra.js'] = fs.readFileSync('./algebra.js');
     };
 
 
@@ -106,6 +107,11 @@ var EquationSolverApp = function() {
         self.routes['/'] = function(req, res) {
             res.setHeader('Content-Type', 'text/html');
             res.send(self.cache_get('index.html') );
+        };
+
+        self.routes['/algebra.js'] = function(req, res) {
+            res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
+            res.send(self.cache_get('algebra.js') );
         };
 
         self.routes['/parses'] = function(req, res) {    
