@@ -225,6 +225,8 @@ pre{
           <section class='col-xs-12 col-sm-12 col-md-12'>
             Example Sentences : <br/>
               राम ने 10 आम खरीदे । राम ने 4 आम खा लिए । राम ने कितने आम नही खाए ?
+              <br/>
+              मणी ने 15 चॉकलेट खरीदे । मणी ने राधा को 6 चॉकलेट दिए । मनी के पास कितने चॉकलेट हैं?
           </section>
           <section class='col-xs-12 col-sm-12 col-md-12'>
             <section>
@@ -249,13 +251,7 @@ pre{
                 {{/.}}
           </script>
           </section>
-         <!-- <section class="col-xs-12 col-sm-12 col-md-12">
-
-                <h2>Pos Tagger</h2>
-                <p id="pos-output"></p>
-                
-
-          </section>-->
+         
           <section class="col-xs-12 col-sm-12 col-md-12">
 
                 <h2>Container Output</h2>
@@ -286,11 +282,13 @@ pre{
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!--<script src="http://algebra.js.org/javascripts/algebra-0.2.6.min.js"></script>-->
+  <script src="http://algebra.js.org/javascripts/algebra-0.2.6.min.js"></script>
 <script type="text/javascript">
 var VARIABLES = ['x','y','z'];
+var statements = [];
+var sentences = [];
   function processText(text){
-    var sentences = text.split("।").filter(function(el,i,r) { return el.trim().length != 0 });
+    sentences = text.split("।").filter(function(el,i,r) { return el.trim().length != 0 });
     sentences.forEach(function(sentence,ind,word_problem){ 
       if(ind != word_problem.length - 1){ 
         word_problem[ind] = sentence + "।";
@@ -300,6 +298,7 @@ var VARIABLES = ['x','y','z'];
     return { dataArr : sentences };
   }
 	function getSSF(){
+    statements = [];
     $("#getSSFOPBtn").button('loading');
 		var request = new Request('/getParse', {
 			method: 'POST',
@@ -333,41 +332,82 @@ var VARIABLES = ['x','y','z'];
         return parseObj;
 		}).then(function(parseObj){
         if(Array.isArray(parseObj)){
-            parseObj.forEach(function(ele){ getContainer(ele.parseId); } );
+            parseObj.forEach(function(ele){ 
+              getContainer(ele.parseId);
+            });
         }else{
             getContainer(parseObj.parseId);
-        }
-        return parseObj;       
+        }   
+    }).then(function(){
+      
     });
 	}
+
+  var getQuantity = function(operator,qty){
+    var quantity = '';
+    switch(operator){
+        case "+":
+          quantity = 0 + parseInt(qty,10);
+          break;
+        case "-":
+          quantity = 0 - parseInt(qty,10);
+          break;
+        case "?":
+          quantity = "Unknown";
+          break;
+        default:
+          console.error("Unknown operation", operator);
+          return;
+      }
+      return quantity;
+  }
 
   var getContainer = function(parseId){
     fetch(new Request('/parser/'+parseId)).then(function(response) {
         return response.json();
     }).then(function(parseObj) { 
         $("#container-"+parseId).text(JSON.stringify(parseObj,null, '\t'));
-        return parseObj;
-    }).then(function(parseObj){
-      /*var html = "Let's denoted <b>" + parseObj.object + "</b> by "+VARIABLES[0]+", <br/>";
-      var quantity = 0;
-      switch(parseObj.operator){
-        case "+":
-          quantity = quantity + parseInt(parseObj.qty,10);
-          break;
-        case "-":
-          quantity = quantity - parseInt(parseObj.qty,10);
-          break;
-        default:
-          console.error("Unknown operation", parseObj.operator);
-          return;
+        parseObj["parseId"] = parseId;
+        statements.push(parseObj);
+        if(statements.length == sentences.length){
+          processEquation();
+        }
+    })
+  }
+
+  var processEquation = function(){
+    var variables = [];
+    var variable = "";
+    for(i = 0; i < statements.length ; ++i){
+      var html = "";
+      var same_var = false;
+      if(i == 0 || ( i != 0 && statements[i].object != statements[i-1].object)){
+        html = html + "Let's denoted <b>" + statements[i].object + "</b> by "+VARIABLES[0]+", <br/>";
+        variable = VARIABLES[0];
+      }else{
+        same_var = true;
       }
-      var expr = new algebra.Expression(VARIABLES[0]);
-      var eqa = new algebra.Equation(expr,quantity);
-      var x = eqa.solveFor(VARIABLES[0]);
-      html = html +  VARIABLES[0] + " = " + x.toString();
-      VARIABLES = VARIABLES.splice(0);
-      $("#equation-"+parseId).html(html);*/
-    });
+      var quantity = getQuantity(statements[i].operator,statements[i].qty);
+      if(quantity == "Unknown"){
+          html = html + "We need to find the quantity of <b>" + statements[i].object + "</b>, which is denoted by "+variable+", <br/>";
+          console.log(html);
+      }else{
+        /*if(same_var){
+             var expr = new algebra.Expression(variable+parseInt(quantity,10));
+          }else{
+              var expr = new algebra.Expression(variable);
+              var eqa = new algebra.Equation(expr,quantity);
+              var x = eqa.solveFor(variable);
+          }*/
+          var expr = new algebra.Expression(variable);
+          var eqa = new algebra.Equation(expr,quantity);
+          var x = eqa.solveFor(variable);
+          html = html +  variable + " = " + x.toString();
+          VARIABLES = VARIABLES.splice(0);
+          console.log(html);
+      }
+      $("#equation-"+statements[i].parseId).html(html);
+    }
   }
 	$(document).ready(function(){
 		$("#getSSFOPBtn").on("click",getSSF);
